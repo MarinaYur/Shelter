@@ -1,0 +1,34 @@
+.notOnly__content {
+    padding-top: 168px;
+}
+
+.notOnly__title {
+    max-width: 360px;
+    padding-bottom: 41px;
+}
+
+.notOnly__subtitle {
+    color: $color-dark-s;
+    line-height: 2.4rem;
+    max-width: 474px;
+    padding-bottom: 41px;
+}
+
+.notOnly__button {
+    width: 207px;
+    cursor: pointer;
+        &:hover {
+            background-color: $color-light-l;
+        }
+}
+
+.notOnly__start-screen-puppy {
+    width: 696px;
+    height: 728px;
+    background-image: url(../../../assets/images/start-screen-puppy.svg);
+}
+
+.notOnly {
+    display: flex;
+    justify-content: space-between;
+}

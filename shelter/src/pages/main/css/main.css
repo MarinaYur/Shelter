@@ -32,7 +32,7 @@
 }
 
 .header {
-  padding-bottom: 48px;
+  padding-bottom: 81px;
 }
 
 .header__content {
@@ -41,8 +41,28 @@
   padding-top: 32px;
 }
 
+.logo {
+  padding-left: 4px;
+}
+
 .logo__subtitle {
   padding-top: 3px;
+}
+
+.button {
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  color: #292929;
+  letter-spacing: 1px;
+}
+.button--colored {
+  background-color: #F1CDB3;
 }
 
 @font-face {
@@ -157,6 +177,41 @@ p {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.notOnly__content {
+  padding-top: 168px;
+}
+
+.notOnly__title {
+  max-width: 360px;
+  padding-bottom: 41px;
+}
+
+.notOnly__subtitle {
+  color: #CDCDCD;
+  line-height: 2.4rem;
+  max-width: 474px;
+  padding-bottom: 41px;
+}
+
+.notOnly__button {
+  width: 207px;
+  cursor: pointer;
+}
+.notOnly__button:hover {
+  background-color: #F6F6F6;
+}
+
+.notOnly__start-screen-puppy {
+  width: 696px;
+  height: 728px;
+  background-image: url(../../../assets/images/start-screen-puppy.svg);
+}
+
+.notOnly {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

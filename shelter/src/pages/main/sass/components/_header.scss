@@ -1,11 +1,15 @@
 .header {
-  padding-bottom: 48px;
+  padding-bottom: 81px;
 }
 
 .header__content {
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
+}
+
+.logo {
+  padding-left: 4px;
 }
 
 .logo__subtitle {
