@@ -23,7 +23,7 @@
 }
 
 .notOnly__start-screen-puppy {
-    width: 696px;
+    width: 698px;
     height: 728px;
     background-image: url(../../../assets/images/start-screen-puppy.svg);
 }
@@ -31,4 +31,5 @@
 .notOnly {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 4px;
 }

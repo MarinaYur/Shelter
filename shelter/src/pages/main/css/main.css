@@ -204,7 +204,7 @@ p {
 }
 
 .notOnly__start-screen-puppy {
-  width: 696px;
+  width: 698px;
   height: 728px;
   background-image: url(../../../assets/images/start-screen-puppy.svg);
 }
@@ -212,6 +212,47 @@ p {
 .notOnly {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.about {
+  display: flex;
+  padding: 0px 0 100px 0;
+  justify-content: flex-start;
+}
+
+.about__petsImage {
+  width: 300px;
+  height: 408px;
+  background-image: url("../../../assets/images/about-pets.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 80px 120px 0 175px;
+}
+
+.about__title {
+  width: 323px;
+  padding-top: 95px;
+  letter-spacing: 0.17rem;
+}
+
+.about__subtitle {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #4C4C4C;
+  padding: 24px 0 0 0;
+  width: 437px;
+}
+
+.about__subtitle1 {
+  letter-spacing: 0.005rem;
+  padding-bottom: 25px;
+}
+
+.about__subtitle2 {
+  letter-spacing: 0.008rem;
 }
 
 /*# sourceMappingURL=main.css.map */
