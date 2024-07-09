@@ -1,3 +1,10 @@
+.bank-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .nav {
   width: 443px;
   padding-top: 15px;
@@ -333,6 +340,39 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .item__title9 {
     margin-left: 6px;
+  }
+}
+
+.bank-card {
+  width: 349px;
+  height: 43px;
+  background-color: #F1CDB3;
+  border-radius: 0.9rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .bank-card {
+    max-width: 281px;
+  }
+}
+
+.bank-card__icon {
+  width: 30px;
+  height: 23px;
+  background-image: url("../../../assets/images/icons/credit-card.svg");
+  margin: 0 0 0 15px;
+}
+
+.bank-card__bank-link {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.05rem;
+  text-decoration: none;
+  color: #545454;
+  letter-spacing: 0.09rem;
+  padding-left: 16px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .bank-card__bank-link {
+    font-size: 1.5rem;
   }
 }
 
@@ -747,7 +787,7 @@ p {
   flex-wrap: nowrap;
 }
 .layout-2-column > * {
-  flex-basis: 50%;
+  flex-basis: 49.5%;
 }
 
 .layout-3-column {
@@ -767,6 +807,52 @@ p {
 }
 .layout-9-column-in-2-rows > * {
   flex-basis: 20%;
+}
+
+.addition {
+  background-color: #F6F6F6;
+}
+
+.wrapper__addition {
+  padding: 81px 0 100px 142px;
+}
+
+.addition__image {
+  background-image: url("../../../assets/images/donation-dog.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: left;
+}
+
+.addition__content {
+  padding: 0px 157px 0 0px;
+}
+
+.addition__title {
+  padding-bottom: 20px;
+  letter-spacing: 0.22rem;
+  white-space: pre-line;
+}
+
+.addition__subtitle {
+  font-family: Georgia, serif;
+  color: #545454;
+  letter-spacing: 0.09rem;
+  font-weight: 400;
+  padding: 0 0 17px 1px;
+}
+
+.addition__note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.8rem;
+  line-height: 1.8rem;
+  color: #B2B2B2;
+  padding: 21px 0 0 0;
+  width: 362px;
+  letter-spacing: 0.0023rem;
 }
 
 /*# sourceMappingURL=main.css.map */

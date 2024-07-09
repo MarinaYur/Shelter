@@ -1,0 +1,29 @@
+.bank-card {
+    width: 349px;
+    height: 43px;
+    background-color: $color-primary;
+    @extend %flex-start;
+    border-radius: 0.9rem;
+    @include media-mobile {
+        max-width: 281px;
+    }
+}
+
+.bank-card__icon {
+    width: 30px;
+    height: 23px;
+    background-image: url("../../../assets/images/icons/credit-card.svg");
+    margin: 0 0 0 15px;
+}
+
+.bank-card__bank-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.05rem;
+    text-decoration: none;
+    color: $color-dark-l;
+    letter-spacing: 0.09rem;
+    padding-left: 16px;
+    @include media-mobile {
+        font-size: 1.5rem;
+    }
+}
