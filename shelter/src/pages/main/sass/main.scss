@@ -9,6 +9,9 @@
 @import "components/navigation";
 @import "components/header";
 @import "components/buttons";
+@import "components/pet";
+@import "components/item";
+
 
 
 //Base
@@ -20,6 +23,5 @@
 @import "layouts/wrapper";
 @import "layouts/notOnly";
 @import "layouts/about";
-
-
-
+@import "layouts/ourFriends";
+@import "layouts/help";
