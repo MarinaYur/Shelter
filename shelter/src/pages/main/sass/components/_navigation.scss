@@ -1,0 +1,27 @@
+.nav {
+    width: 443px;
+    padding-top: 15px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    @include media-mobile {
+        flex-direction: column;
+    }
+}
+
+.nav__list-item {
+    @include font($size: 1.5rem, $height: 2.4rem);
+    list-style-type: none;
+}
+
+.nav__list-link {
+    text-decoration: none;
+    color: $color-dark-s;
+        &--active {
+            color: $color-light-s;
+            border-bottom: solid 3px $color-primary;
+            padding-bottom: 0.4rem;
+        }
+}
