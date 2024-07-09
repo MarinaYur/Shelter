@@ -1,0 +1,5 @@
+.contacts-block {
+    color: $color-primary;
+    @extend %flex-start;
+    text-decoration: none;
+}
