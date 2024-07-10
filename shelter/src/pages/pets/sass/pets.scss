@@ -6,6 +6,8 @@
 //Components
 @import "components/navigation";
 @import "components/logo";
+@import "components/pet";
+@import "components/buttons";
 
 //Base
 @import "base/fonts";
@@ -13,3 +15,6 @@
 
 //Layouts
 @import "layouts/header";
+@import "layouts/wrapper";
+@import "layouts/columns";
+@import "layouts/ourFriends";

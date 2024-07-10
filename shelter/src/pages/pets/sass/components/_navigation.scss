@@ -1,9 +1,6 @@
 .nav {
     width: 443px;
     padding-top: 15px;
-    @include media-mobile {
-        display: none;
-    }
 }
 
 .nav__list {
@@ -11,18 +8,18 @@
     justify-content: space-between;
 }
 
-.list__item {
+.nav__list-item {
     @include font($size: 1.5rem, $height: 2.4rem, $weight: 400, $style: normal);
     list-style-type: none;
 }
 
-.list__link {
+.nav__list-link {
     text-decoration: none;
     color: $color-dark-l;
     padding-bottom: 4px;
 }
 
-.list__link--active {
+.nav__list-link--active {
     color: $color-dark-3xl;
     border-bottom: solid 3px $color-primary;
 }
