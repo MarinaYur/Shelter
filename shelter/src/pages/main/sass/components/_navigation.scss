@@ -19,6 +19,8 @@
 .nav__list-link {
     text-decoration: none;
     color: $color-dark-s;
+    transition: 0.5s;
+
         &--active {
             color: $color-light-s;
             border-bottom: solid 3px $color-primary;

@@ -135,6 +135,8 @@
     position: absolute;
     top: 25.2rem;
     cursor: pointer;
+    transition: 0.5s;
+
         &:hover {
             background-color: $color-primary;
         }
