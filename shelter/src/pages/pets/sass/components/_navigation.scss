@@ -1,25 +1,29 @@
 .nav {
-    width: 443px;
-    padding-top: 15px;
+  width: 443px;
+  padding-top: 15px;
 }
 
 .nav__list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav__list-item {
-    @include font($size: 1.5rem, $height: 2.4rem, $weight: 400, $style: normal);
-    list-style-type: none;
+  @include font($size: 1.5rem, $height: 2.4rem, $weight: 400, $style: normal);
+  list-style-type: none;
 }
 
 .nav__list-link {
-    text-decoration: none;
-    color: $color-dark-l;
-    padding-bottom: 4px;
+  text-decoration: none;
+  color: $color-dark-l;
+  padding-bottom: 4px;
+  transition: 0.5s;
+  &:hover {
+    color: $color-dark-3xl;
+  }
 }
 
 .nav__list-link--active {
-    color: $color-dark-3xl;
-    border-bottom: solid 3px $color-primary;
+  color: $color-dark-l;
+  border-bottom: solid 3px $color-primary;
 }

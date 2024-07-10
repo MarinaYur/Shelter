@@ -3,14 +3,11 @@
     width: 269px;
     height: 435px;
     cursor: pointer;
-    @include media-tablet {
-        margin-bottom:  30px;
-    }
 }
 
-.pet:hover {
-    transform: scale(1.5);
-}
+// .pet:hover {
+//     transform: scale(1.5);
+// }
 
 .pet__image {
     height: 270px;
@@ -60,7 +57,7 @@
 }
 
 .pet__button {
-    background-color: white;
+    background-color: $color-light-s;
     width: 187px;
     margin: 31px 0 0 42px;
 }

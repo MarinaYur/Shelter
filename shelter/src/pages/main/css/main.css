@@ -110,6 +110,10 @@
   align-items: center;
 }
 
+.pet:hover .pet__button {
+  background-color: #FDDCC4;
+}
+
 .pet {
   background-color: #FAFAFA;
   width: 269px;
@@ -571,8 +575,9 @@ p {
 
 .about {
   display: flex;
-  padding: 0px 0 100px 0;
   justify-content: flex-start;
+  background-color: #FFFFFF;
+  padding: 1px 0px 100px 41px;
 }
 
 .about__petsImage {

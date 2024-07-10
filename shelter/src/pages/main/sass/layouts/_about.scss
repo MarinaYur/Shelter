@@ -1,8 +1,8 @@
 .about {
   display: flex;
-  padding: 0px 0 100px 0;
   justify-content: flex-start;
-}
+  background-color: $color-light-xl;
+  padding: 1px 0px 100px 41px;}
 
 .about__petsImage {
   width: 300px;
