@@ -13,7 +13,7 @@
 
 .ourFriends__button {
     width: 261px;
-    margin: 59px 0 0 430px;;
+    margin: 59px 0 0 430px;
 }
 
 .ourFriends__title {
@@ -171,10 +171,6 @@
 }
 
 .ourFriends__button {
-    cursor: pointer;
-        &:hover {
-            background-color: $color-light-l;
-        }
     @include media-tablet {
         margin: 59px 0 0 253px;
     }

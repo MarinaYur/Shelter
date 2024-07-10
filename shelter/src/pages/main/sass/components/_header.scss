@@ -12,6 +12,13 @@
   padding-left: 4px;
 }
 
-.logo__subtitle {
-  padding-top: 3px;
+.logo__title {
+    letter-spacing: 1.3px;
 }
+
+.logo__subtitle {
+    padding-top: 3px;
+    @include font(1.3rem, auto);
+    color: $color-light-xl;
+    letter-spacing: 1.2px;
+  }

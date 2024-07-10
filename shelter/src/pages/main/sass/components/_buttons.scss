@@ -2,12 +2,22 @@
   @include font($size: 1.7rem, $height: 2.2rem);
   font-family: Georgia, "Times New Roman", Times, serif;
   height: 52px;
-  border: 2px solid #f1cdb3;
+  border: none;
   border-radius: 100px;
   color: $color-dark-3xl;
   letter-spacing: 1px;
+  cursor: pointer;
+
+  &--bordered {
+    border: 2px solid #f1cdb3;
+    background-color: $color-light-s;
+  }
   &--colored {
     background-color: $color-primary;
+  }
+  &:hover {
+    background-color: $color-primary-light;
+
   }
   a {
     @include font($size: 1.7rem, $height: 2.2rem);

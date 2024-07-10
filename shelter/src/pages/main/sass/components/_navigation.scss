@@ -24,4 +24,7 @@
             border-bottom: solid 3px $color-primary;
             padding-bottom: 0.4rem;
         }
+        &:hover {
+            color: $color-light-s;
+        }
 }

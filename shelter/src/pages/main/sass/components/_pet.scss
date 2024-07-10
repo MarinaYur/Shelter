@@ -44,7 +44,9 @@
 }
 
 .pet__button {
-    background-color: white;
     width: 187px;
     margin: 30px 0 0 40px;
+    &:hover {
+        border: none;
+    }
 }
