@@ -1,19 +1,12 @@
-.pet:hover {
-    .pet__button {
-        background-color: $color-primary-light;
-    }
-}
+
 
 .pet {
-  // position: relative;
-  // display: none;
-  // display: inline-block;
   background-color: $color-light-s;
   width: 269px;
   height: 435px;
   margin-right: 91px;
-  // animation: 0.5s ease-in-out;
   cursor: pointer;
+  transition: 0.5s;
   @include media-mobile {
     width: 270px;
     height: 507px;
@@ -21,7 +14,10 @@
 }
 
 .pet:hover {
-  background-color: $color-light-xl;
+    background-color: $color-light-xl;
+    .pet__button {
+        background-color: $color-primary-light;
+    }
 }
 
 .pet__image {

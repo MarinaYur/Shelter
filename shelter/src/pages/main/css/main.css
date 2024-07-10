@@ -111,16 +111,13 @@
   align-items: center;
 }
 
-.pet:hover .pet__button {
-  background-color: #FDDCC4;
-}
-
 .pet {
   background-color: #FAFAFA;
   width: 269px;
   height: 435px;
   margin-right: 91px;
   cursor: pointer;
+  transition: 0.5s;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .pet {
@@ -131,6 +128,9 @@
 
 .pet:hover {
   background-color: #FFFFFF;
+}
+.pet:hover .pet__button {
+  background-color: #FDDCC4;
 }
 
 .pet__image {
@@ -452,6 +452,7 @@
 html {
   font-size: 10px;
   background-color: #E5E5E5;
+  scroll-behavior: smooth;
 }
 
 body {
