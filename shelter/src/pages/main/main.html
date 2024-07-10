@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/src/assets/images/favicon.png">
+
     <title>Shelter</title>
   </head>
   <body>
@@ -48,9 +50,9 @@
             anybody else in the world, you will see!
           </p>
 
-          <button class="button notOnly__button button--colored">
-            <a href="#" class="notOnly__link"> Make a friend </a>
-          </button>
+          <div class="button notOnly__button button--colored div-button">
+            <a href="#ourFriends" class="notOnly__link"> Make a friend </a>
+          </div>
         </div>
         <div class="notOnly__start-screen-puppy"></div>
       </section>
@@ -80,7 +82,7 @@
         </div>
       </section>
 
-      <section class="ourFriends">
+      <section class="ourFriends" id="ourFriends">
         <div class="wrapper wrapper__ourFriends">
         <h3 class="ourFriends__title">
           Our friends who <br> are looking for a house
@@ -139,9 +141,9 @@
           </div>
           <div class="slider__right-arrow slider__arrow"></div>
         </div>
-        <button class="button ourFriends__button button--colored">
+        <div class="button ourFriends__button button--colored div-button">
           <a href="../pets/pets.html"> Get to know the rest </a>
-        </button>
+        </div>
         </div>
       </section>
       <section class="help">
@@ -198,7 +200,7 @@
                     Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
         </div>
-
+    </section>
     </main>
 
     <footer class="footer">
@@ -216,12 +218,12 @@
             </div>
             <div class="footer__address">
                 <h3 class="footer__title">We are waiting <span>for your visit</span></h3>
-                <a href="https://maps.google.com?saddr=Current+Location$daddr=43.12345,-76.12345" target="_blank" class="contacts-block footer__address1">
+                <a class="contacts-block footer__address1" href="https://maps.google.com?saddr=Current+Location$daddr=43.12345,-76.12345" target="_blank" >
                     <div class="footer__icon-location"></div>
                     <h4 class="footer__address-subtitle">1 Central Street, Boston
                         <span>(entrance from the store)</span></h4>
                 </a>
-                <a href="https://maps.google.com?saddr=Current+Location$daddr=53,891577°; 27,570679°" target="_blank" class="contacts-block footer__address2">
+                <a class="contacts-block footer__address2" href="https://www.google.com/maps/dir//53.891577,27.570679" target="_blank" >
                     <div class="footer__icon-location"></div>
                     <h4 class="footer__address-subtitle">18 South Park, London </h4>
                 </a>

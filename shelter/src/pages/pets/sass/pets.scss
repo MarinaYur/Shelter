@@ -2,3 +2,14 @@
 @import "abstracts/constans";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
+
+//Components
+@import "components/navigation";
+@import "components/logo";
+
+//Base
+@import "base/fonts";
+@import "base/base";
+
+//Layouts
+@import "layouts/header";

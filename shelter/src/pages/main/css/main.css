@@ -104,6 +104,12 @@
   text-decoration: none;
 }
 
+.div-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pet {
   background-color: #FAFAFA;
   width: 269px;
