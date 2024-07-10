@@ -1,14 +1,15 @@
 .ourFriends {
     padding: 11px 0 99px 0;
-    padding-bottom: 99px;
     position: relative;
     background-color: $color-light-l;
 }
 
 .ourFriends__wrapper {
-    padding: 25px 0 0px 0;
-    margin-left: auto;
-    margin-right: 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 23px 0 0px 81px;
+    // margin-left: auto;
+    // margin-right: 0;
 }
 
 .ourFriends__button {
@@ -19,14 +20,13 @@
 .ourFriends__title {
     text-align: center;
     letter-spacing: 0.2rem;
-    padding: 0px 77px 0 0;
-    width: 524px;
-    margin: 0 auto;
+    width: 1119px;
+    // margin: 0 auto;
     white-space: pre-line;
 }
 
 .ourFriends__slider {
-    padding: 60px 0 0 65px;
+    padding: 58px 0 0 65px;
     position: relative;
 }
 

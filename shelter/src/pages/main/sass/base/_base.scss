@@ -9,13 +9,13 @@
 
 html {
     font-size: 10px;
-    background-color: $page-background;
+    // background-color: $page-background;
     scroll-behavior: smooth;
 }
 
 body {
     overflow: visible;
-    max-width: 1280px;
+    // max-width: 1280px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     @include font($size: 1.6rem, $height: 2.4rem);

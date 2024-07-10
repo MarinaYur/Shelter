@@ -68,6 +68,7 @@
 }
 .pet:hover {
   background-color: #FFFFFF;
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .pet:hover .pet__button {
   background-color: #FDDCC4;
@@ -183,7 +184,6 @@ html {
 
 body {
   overflow: visible;
-  max-width: 1280px;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
@@ -384,7 +384,7 @@ p {
 }
 
 .footer {
-  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url("/src/assets/images/footer-gradient-background.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 .footer__title {

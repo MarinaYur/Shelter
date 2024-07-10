@@ -43,7 +43,10 @@
 }
 
 .header {
-  padding-bottom: 81px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 82px;
 }
 
 .header__content {
@@ -128,6 +131,7 @@
 
 .pet:hover {
   background-color: #FFFFFF;
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .pet:hover .pet__button {
   background-color: #FDDCC4;
@@ -429,7 +433,7 @@
 @font-face {
   font-family: Arial;
   src: url("../../../assets/fonts/ArialRegular.eot");
-  src: url("../../../assets/fonts/ArialRegular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ArialRegular.woff") format("woff"), url("../../../assets/fonts/ArialRegular.ttf") format("truetype");
+  src: url("../../../assets/fonts/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../../../../assets/fonts/ArialRegular.woff") format("woff"), url("../../../assets/fonts/ArialRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -451,13 +455,11 @@
 
 html {
   font-size: 10px;
-  background-color: #E5E5E5;
   scroll-behavior: smooth;
 }
 
 body {
   overflow: visible;
-  max-width: 1280px;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
@@ -535,7 +537,8 @@ p {
 }
 
 .header-notOnly {
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url("/src/assets/images/start-screen-gradient-background.jpg"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background-size: cover;
 }
 
 .wrapper {
@@ -578,8 +581,10 @@ p {
 .about {
   display: flex;
   justify-content: flex-start;
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: #FFFFFF;
-  padding: 1px 0px 100px 41px;
+  padding: 1px 0px 100px 40px;
 }
 
 .about__petsImage {
@@ -618,15 +623,14 @@ p {
 
 .ourFriends {
   padding: 11px 0 99px 0;
-  padding-bottom: 99px;
   position: relative;
   background-color: #F6F6F6;
 }
 
 .ourFriends__wrapper {
-  padding: 25px 0 0px 0;
-  margin-left: auto;
-  margin-right: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 23px 0 0px 81px;
 }
 
 .ourFriends__button {
@@ -637,14 +641,12 @@ p {
 .ourFriends__title {
   text-align: center;
   letter-spacing: 0.2rem;
-  padding: 0px 77px 0 0;
-  width: 524px;
-  margin: 0 auto;
+  width: 1119px;
   white-space: pre-line;
 }
 
 .ourFriends__slider {
-  padding: 60px 0 0 65px;
+  padding: 58px 0 0 65px;
   position: relative;
 }
 
@@ -859,7 +861,7 @@ p {
 }
 
 .wrapper__addition {
-  padding: 81px 0 101px 142px;
+  padding: 83px 0 101px 143px;
 }
 
 .addition__image {
@@ -901,7 +903,8 @@ p {
 }
 
 .footer {
-  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url("/src/assets/images/footer-gradient-background.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background-size: cover;
 }
 
 .footer__title {
