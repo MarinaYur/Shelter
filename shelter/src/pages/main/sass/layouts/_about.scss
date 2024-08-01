@@ -5,6 +5,12 @@
   margin: 0 auto;
   background-color: $color-light-xl;
   padding: 1px 0px 100px 40px;
+  @include media-tablet {
+    flex-direction: column-reverse;
+   width: 437px;
+   padding: 1px 0px 100px 2px;
+  }
+
 }
 
 .about__petsImage {
@@ -14,12 +20,18 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 80px 120px 0 175px;
+  @include media-tablet {
+    margin: 79px 0px 0 66px;
+  }
 }
 
 .about__title {
   width: 323px;
   padding-top: 95px;
   letter-spacing: 2px;
+  @include media-tablet {
+    padding-top: 80px;
+  }
 }
 
 .about__subtitle {
@@ -27,6 +39,9 @@
   color: $color-dark-xl;
   padding: 21px 0 0 0;
   width: 437px;
+  @include media-tablet {
+    padding-top: 23px;
+  }
 }
 
 .about__subtitle1 {
