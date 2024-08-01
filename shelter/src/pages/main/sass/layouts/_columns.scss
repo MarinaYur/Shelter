@@ -8,6 +8,6 @@
 }
 
 .layout-9-column-in-2-rows{
-    @include columns($width:20%);
-    justify-content: space-evenly;
+    // @include columns($width:20%);
+    // justify-content: space-evenly;
 }

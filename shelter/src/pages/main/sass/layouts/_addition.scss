@@ -3,18 +3,16 @@
 }
 
 .wrapper__addition {
-    padding: 82px 0 100px 143px;
+    padding: 79px 0 100px 143px;
 
 }
 
 .addition__image {
-    // width: 505px;
-    // height: 283px;
+    width: 505px;
+    // height: 261px;
     background-image: url("../../../assets/images/donation-dog.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: left;
-
+    background-position-y: 11px;
 }
 
 .addition__content {

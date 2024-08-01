@@ -1,15 +1,28 @@
 .help__items {
-    padding: 58px 0 0 88px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1026px;
+    max-width: 100%;
+    padding: 58px 0 0 0px;
     letter-spacing: 1px;
-    height: 398px;
+    // height: 398px;
+}
+
+.help__items_2 {
+    justify-content: space-around;
+    width: 977px;
 }
 
 .help__wrapper {
-    padding-bottom: 42px;
+    padding-bottom: 98px;
     padding-top: 81px;
 }
 
 .help_title {
+    // margin: 0 auto;
+    // width: 308px;
     text-align: center;
     white-space: pre-line;
     letter-spacing: 0.21rem;

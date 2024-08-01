@@ -168,7 +168,7 @@
 
 .pet__button {
   width: 187px;
-  margin: 30px 0 0 40px;
+  margin: 32px 0 0 40px;
 }
 
 .item {
@@ -177,6 +177,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 113px;
+  align-items: center;
+  flex-shrink: 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .item {
@@ -197,17 +199,14 @@
 }
 
 .item__image1 {
-  margin-left: 8px;
   background-image: url("../../../assets/images/icons/icon-pet-food.svg");
 }
 
 .item__image2 {
-  margin-left: 30px;
   background-image: url("../../../assets/images/icons/icon-transportation.svg");
 }
 
 .item__title2 {
-  margin-left: -21px;
   letter-spacing: 0.12rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -218,7 +217,6 @@
 }
 
 .item__image3 {
-  margin-left: 27px;
   background-image: url("../../../assets/images/icons/icon-toys.svg");
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -228,7 +226,6 @@
 }
 
 .item__title3 {
-  margin-left: 35px;
   letter-spacing: 0.15rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -239,7 +236,6 @@
 }
 
 .item__image4 {
-  margin-left: 31px;
   background-image: url("../../../assets/images/icons/icon-bowls-and-cups.svg");
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -254,7 +250,6 @@
 }
 
 .item__title4 {
-  margin-left: -15px;
   letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -269,7 +264,6 @@
 }
 
 .item__image5 {
-  margin-left: 56px;
   background-image: url("../../../assets/images/icons/icon-shampoos.svg");
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -284,7 +278,6 @@
 }
 
 .item__title5 {
-  margin-left: 34px;
   letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -299,7 +292,6 @@
 }
 
 .item__image6 {
-  margin-left: 53px;
   background-image: url("../../../assets/images/icons/icon-vitamins.svg");
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -314,7 +306,6 @@
 }
 
 .item__title6 {
-  margin-left: 39px;
   letter-spacing: 0.13rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -330,7 +321,6 @@
 }
 
 .item__image7 {
-  margin-left: 2px;
   background-image: url("../../../assets/images/icons/icon-medicines.svg");
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -340,7 +330,6 @@
 }
 
 .item__title7 {
-  margin-left: -18px;
   letter-spacing: 0.11rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -350,7 +339,6 @@
 }
 
 .item__image8 {
-  margin-left: -12px;
   background-image: url("../../../assets/images/icons/icon-collars-leashes.svg");
   background-repeat: no-repeat;
 }
@@ -361,7 +349,6 @@
 }
 
 .item__title8 {
-  margin-left: -65px;
   letter-spacing: 0.122rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -371,7 +358,6 @@
 }
 
 .item__image9 {
-  margin-left: -5px;
   background-image: url("../../../assets/images/icons/icon-sleeping-area.svg");
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -381,7 +367,6 @@
 }
 
 .item__title9 {
-  margin-left: -47px;
   letter-spacing: 0.13rem;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -628,19 +613,18 @@ p {
 .ourFriends__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 23px 0 0px 81px;
+  padding: 68px 0 0px 81px;
 }
 
 .ourFriends__button {
   width: 261px;
-  margin: 59px 0 0 430px;
+  margin: 61px 0 0 429px;
 }
 
 .ourFriends__title {
   text-align: center;
   letter-spacing: 0.2rem;
   width: 1119px;
-  white-space: pre-line;
 }
 
 .ourFriends__slider {
@@ -809,13 +793,23 @@ p {
 }
 
 .help__items {
-  padding: 58px 0 0 88px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1026px;
+  max-width: 100%;
+  padding: 58px 0 0 0px;
   letter-spacing: 1px;
-  height: 398px;
+}
+
+.help__items_2 {
+  justify-content: space-around;
+  width: 977px;
 }
 
 .help__wrapper {
-  padding-bottom: 42px;
+  padding-bottom: 98px;
   padding-top: 81px;
 }
 
@@ -845,29 +839,19 @@ p {
   flex-basis: auto;
 }
 
-.layout-9-column-in-2-rows {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: space-evenly;
-}
-.layout-9-column-in-2-rows > * {
-  flex-basis: 20%;
-}
-
 .addition {
   background-color: #F6F6F6;
 }
 
 .wrapper__addition {
-  padding: 82px 0 100px 143px;
+  padding: 79px 0 100px 143px;
 }
 
 .addition__image {
+  width: 505px;
   background-image: url("../../../assets/images/donation-dog.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-position-x: left;
+  background-position-y: 11px;
 }
 
 .addition__content {
