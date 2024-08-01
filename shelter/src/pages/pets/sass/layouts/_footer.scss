@@ -1,7 +1,7 @@
 .footer {
-    background: $footer-gradient-background;
-    background-size: cover;
-}
+    background-image: url('./../../../assets/images/footer-gradient-background-grid.png'), linear-gradient(90deg, #513D2F, #1A1A1C);
+     background-blend-mode: multiply;
+    }
 
 .footer__title {
     color: $color-light-xl;

@@ -361,11 +361,23 @@ p {
 }
 
 .slider__arrows div {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
   text-align: center;
-  line-height: 5.2rem;
+  line-height: 49px;
   width: 5.2rem;
   height: 5.2rem;
   border-radius: 50%;
+  text-align: center;
+}
+
+.slider__arrows div h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 49px;
 }
 
 .slider__arrows_left {
@@ -379,16 +391,13 @@ p {
 }
 
 .slider__arrows_right {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  font-weight: 400;
   color: #292929;
   border: 2px solid #F1CDB3;
   cursor: pointer;
 }
 .footer {
-  background: url("/src/assets/images/footer-gradient-background.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  background-size: cover;
+  background-image: url("./../../../assets/images/footer-gradient-background-grid.png"), linear-gradient(90deg, #513D2F, #1A1A1C);
+  background-blend-mode: multiply;
 }
 
 .footer__title {

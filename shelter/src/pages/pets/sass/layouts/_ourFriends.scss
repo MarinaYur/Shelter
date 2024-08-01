@@ -39,12 +39,23 @@
 }
 
 .slider__arrows div {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
     text-align: center;
-    line-height: 5.2rem;
+    line-height: 49px;
     width: 5.2rem;
     height: 5.2rem;
     border-radius: 50%;
+    text-align: center;
+}
 
+.slider__arrows div h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 49px;
 }
 
 .slider__arrows_left {
@@ -58,9 +69,7 @@
 }
 
 .slider__arrows_right {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 400;
+
     color: $color-dark-3xl;
     border: 2px solid $color-primary;
     cursor: pointer;
