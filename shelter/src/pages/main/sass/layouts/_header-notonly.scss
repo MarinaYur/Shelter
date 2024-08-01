@@ -1,4 +1,4 @@
 .header-notOnly {
-  background: $color-background;
-  background-size: cover
+  background-image: url('./../../../assets/images/start-screen-background-grid.jpg'), linear-gradient(35deg, #5B483A, #262425);
+  background-blend-mode: multiply;
 };

@@ -49,7 +49,7 @@
 
 .slider__arrows_left {
     color: $color-dark-s;
-    border: 1px solid $color-dark-s;
+    border: 2px solid $color-dark-s;
 }
 
 .slider__arrows_number-of-page {
@@ -58,7 +58,13 @@
 }
 
 .slider__arrows_right {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
     color: $color-dark-3xl;
-    border: 1px solid $color-primary;
+    border: 2px solid $color-primary;
     cursor: pointer;
+    &:hover {
+
+    }
 }

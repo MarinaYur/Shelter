@@ -71,6 +71,7 @@
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .pet:hover .pet__button {
+  border-color: #FDDCC4;
   background-color: #FDDCC4;
 }
 
@@ -369,7 +370,7 @@ p {
 
 .slider__arrows_left {
   color: #CDCDCD;
-  border: 1px solid #CDCDCD;
+  border: 2px solid #CDCDCD;
 }
 
 .slider__arrows_number-of-page {
@@ -378,11 +379,13 @@ p {
 }
 
 .slider__arrows_right {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
   color: #292929;
-  border: 1px solid #F1CDB3;
+  border: 2px solid #F1CDB3;
   cursor: pointer;
 }
-
 .footer {
   background: url("/src/assets/images/footer-gradient-background.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   background-size: cover;

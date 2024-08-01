@@ -17,6 +17,7 @@
     background-color: $color-light-xl;
     box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
     .pet__button {
+        border-color: $color-primary-light;
         background-color: $color-primary-light;
     }
 }
@@ -42,14 +43,11 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   @include font(2rem, 2.272rem);
   padding: 30px 0 0 98px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 1px;
   color: $color-dark-l;
 }
 
 .pet__button {
   width: 187px;
   margin: 30px 0 0 40px;
-  &:hover {
-    border: none;
-  }
 }

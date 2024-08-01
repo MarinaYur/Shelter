@@ -19,13 +19,13 @@
 .about__title {
   width: 323px;
   padding-top: 95px;
-  letter-spacing: 0.17rem;
+  letter-spacing: 2px;
 }
 
 .about__subtitle {
   @include font(1.5rem, 2.4rem);
   color: $color-dark-xl;
-  padding: 24px 0 0 0;
+  padding: 21px 0 0 0;
   width: 437px;
 }
 

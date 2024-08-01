@@ -46,7 +46,7 @@
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 82px;
+  padding-bottom: 85px;
 }
 
 .header__content {
@@ -134,6 +134,7 @@
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .pet:hover .pet__button {
+  border-color: #FDDCC4;
   background-color: #FDDCC4;
 }
 
@@ -161,16 +162,13 @@
   font-weight: 400;
   line-height: 2.272rem;
   padding: 30px 0 0 98px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 1px;
   color: #545454;
 }
 
 .pet__button {
   width: 187px;
   margin: 30px 0 0 40px;
-}
-.pet__button:hover {
-  border: none;
 }
 
 .item {
@@ -537,8 +535,8 @@ p {
 }
 
 .header-notOnly {
-  background: url("/src/assets/images/start-screen-gradient-background.jpg"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  background-size: cover;
+  background-image: url("./../../../assets/images/start-screen-background-grid.jpg"), linear-gradient(35deg, #5B483A, #262425);
+  background-blend-mode: multiply;
 }
 
 .wrapper {
@@ -547,7 +545,7 @@ p {
 }
 
 .notOnly__content {
-  padding-top: 168px;
+  padding-top: 164px;
 }
 
 .notOnly__title {
@@ -569,13 +567,13 @@ p {
 .notOnly__start-screen-puppy {
   width: 698px;
   height: 728px;
-  background-image: url(../../../assets/images/start-screen-puppy.svg);
+  background-image: url(../../../assets/images/start-screen-puppy.png);
 }
 
 .notOnly {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4px;
+  padding-bottom: 1px;
 }
 
 .about {
@@ -599,7 +597,7 @@ p {
 .about__title {
   width: 323px;
   padding-top: 95px;
-  letter-spacing: 0.17rem;
+  letter-spacing: 2px;
 }
 
 .about__subtitle {
@@ -608,7 +606,7 @@ p {
   font-weight: 400;
   line-height: 2.4rem;
   color: #4C4C4C;
-  padding: 24px 0 0 0;
+  padding: 21px 0 0 0;
   width: 437px;
 }
 
@@ -732,7 +730,8 @@ p {
   transition: 0.5s;
 }
 .slider__arrow:hover {
-  background-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__arrow {
@@ -861,7 +860,7 @@ p {
 }
 
 .wrapper__addition {
-  padding: 83px 0 101px 143px;
+  padding: 82px 0 100px 143px;
 }
 
 .addition__image {
@@ -872,7 +871,7 @@ p {
 }
 
 .addition__content {
-  padding: 0px 157px 0 0px;
+  padding: 1px 0px 0 0px;
 }
 
 .addition__title {
@@ -903,8 +902,8 @@ p {
 }
 
 .footer {
-  background: url("/src/assets/images/footer-gradient-background.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  background-size: cover;
+  background-image: url("./../../../assets/images/footer-gradient-background-grid.png"), linear-gradient(90deg, #513D2F, #1A1A1C);
+  background-blend-mode: multiply;
 }
 
 .footer__title {
