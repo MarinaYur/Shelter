@@ -1,10 +1,18 @@
 .notOnly__content {
     padding-top: 164px;
+    @include media-tablet {
+        padding-top: 0px;
+        width: 460px;
+    margin: 0 auto;
+    }
 }
 
 .notOnly__title {
     max-width: 360px;
     padding-bottom: 41px;
+    @include media-tablet {
+        padding-bottom: 40px;
+    }
 }
 
 .notOnly__subtitle {
@@ -12,24 +20,37 @@
     line-height: 2.4rem;
     max-width: 474px;
     padding-bottom: 41px;
+    @include media-tablet {
+        padding-bottom: 43px;
+    }
 }
 
 .notOnly__button {
     width: 207px;
-    // cursor: pointer;
-        // &:hover {
-        //     background-color: $color-primary-light;
-        // }
+    @include media-tablet {
+        margin: 0 auto;
+    }
 }
 
 .notOnly__start-screen-puppy {
     width: 698px;
     height: 728px;
     background-image: url(../../../assets/images/start-screen-puppy.png);
+    @include media-tablet {
+        height: 608px;
+        margin: 0 auto;
+        background-image: url(../../../assets/images/start-screen-puppy-768.png);
+        background-position: 134px 16px;
+        background-repeat: no-repeat;
+    }
 }
 
 .notOnly {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1px;
+    @include media-tablet {
+        flex-direction: column;
+        gap: 84px;
+    }
 }
