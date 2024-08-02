@@ -340,6 +340,7 @@
 .contacts-block {
   color: #F1CDB3;
   text-decoration: none;
+  gap: 20px;
 }
 
 @font-face {
@@ -844,16 +845,36 @@ p {
   gap: 30px;
   padding: 80px 0 98px 0px;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .wrapper__addition {
+    align-items: center;
+    flex-direction: column-reverse;
+    row-gap: 59px;
+    padding: 80px 0 91px 0px;
+  }
+}
 
 .addition__image {
   width: 505px;
+  height: 270px;
   background-image: url("../../../assets/images/donation-dog.svg");
   background-repeat: no-repeat;
   background-position-y: 11px;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .addition__image {
+    background-position-y: 0px;
+  }
+}
 
 .addition__content {
   padding: 1px 0px 0 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .addition__content {
+    width: 380px;
+    padding: 0px;
+  }
 }
 
 .addition__title {
@@ -888,14 +909,44 @@ p {
   background-blend-mode: multiply;
 }
 
+.footer__wrapper {
+  column-gap: 160px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer__wrapper {
+    justify-content: center;
+    column-gap: 60px;
+  }
+}
+
+.footer__date {
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer__date {
+    padding-top: 30px;
+  }
+}
+
+.footer__contacts {
+  gap: 40px;
+}
+
 .footer__title {
   color: #FFFFFF;
   letter-spacing: 2px;
-  padding: 57px 0 32px 0;
 }
 
 .footer__title span {
   display: block;
+}
+
+.footer__address {
+  width: 302px;
+  max-width: 100%;
+  gap: 32px;
 }
 
 .footer__address h3 {
@@ -909,6 +960,11 @@ p {
   background-repeat: no-repeat;
   background-position-x: right;
   margin-top: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer__image {
+    margin-top: 64px;
+  }
 }
 
 .footer__icon-phone {
@@ -924,17 +980,11 @@ p {
 }
 
 .footer__phone h4 {
-  padding-left: 20px;
   letter-spacing: 0.123rem;
-}
-
-.footer__e-mail {
-  padding: 7px 0 40px 0px;
 }
 
 .footer__e-mail h4 {
   letter-spacing: 0.122rem;
-  padding-left: 20px;
 }
 
 .footer__icon-location {
@@ -944,13 +994,8 @@ p {
   background-repeat: no-repeat;
 }
 
-.footer__address-subtitle {
-  padding-left: 20px;
-}
-
 .footer__address1 {
-  padding: 1px 0 32px 0;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 }
 
 .footer__address1 h4 span {
@@ -958,7 +1003,7 @@ p {
 }
 
 .footer__address2 {
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 }
 
 /*# sourceMappingURL=main.css.map */

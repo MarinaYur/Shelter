@@ -8,17 +8,31 @@
     margin: 0 auto;
     gap: 30px;
     padding: 80px 0 98px 0px;
+    @include media-tablet {
+        align-items: center;
+        flex-direction: column-reverse;
+        row-gap: 59px;
+        padding: 80px 0 91px 0px;
+    }
 }
 
 .addition__image {
     width: 505px;
+    height: 270px;
     background-image: url("../../../assets/images/donation-dog.svg");
     background-repeat: no-repeat;
     background-position-y: 11px;
+    @include media-tablet {
+        background-position-y: 0px;
+    }
 }
 
 .addition__content {
     padding: 1px 0px 0 0px;
+    @include media-tablet {
+        width: 380px;
+        padding: 0px;
+    }
 
 }
 
