@@ -1,84 +1,83 @@
 .footer {
-background-image: url('./../../../assets/images/footer-gradient-background-grid.png'), linear-gradient(90deg, #513D2F, #1A1A1C);
- background-blend-mode: multiply;
-
+  background-image: url("./../../../assets/images/footer-gradient-background-grid.png"),
+    linear-gradient(90deg, #513d2f, #1a1a1c);
+  background-blend-mode: multiply;
 }
 
 .footer__title {
-    color: $color-light-xl;
-    letter-spacing: 0.22rem;
-    padding: 57px 0 32px 0;
+  color: $color-light-xl;
+  letter-spacing: 2px;
+  padding: 57px 0 32px 0;
 }
 
 .footer__title span {
-    display: block;
+  display: block;
 }
 
-
 .footer__address h3 {
-    width: 91%;
+  width: 91%;
 }
 
 .footer__image {
-    width: 300px;
-    height: 310px;
-    background-image: url("../../../assets/images/footer-puppy.svg");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    margin-top: 40px;
+  width: 300px;
+  height: 310px;
+  background-image: url("../../../assets/images/footer-puppy.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  margin-top: 40px;
 }
 
 .footer__icon-phone {
-    width: 40px;
-    height: 32px;
-    background-image: url("../../../assets/images/icons/icon-phone.svg");
+  width: 40px;
+  height: 32px;
+  background-image: url("../../../assets/images/icons/icon-phone.svg");
 }
 
 .footer__icon-email {
-    width: 40px;
-    height: 32px;
-    background-image: url("../../../assets/images/icons/icon-email.svg");
+  width: 40px;
+  height: 32px;
+  background-image: url("../../../assets/images/icons/icon-email.svg");
 }
 
 .footer__phone {
-    // padding-left: 6px;
+  // padding-left: 6px;
 }
 
-.footer__phone h4{
-    padding-left: 20px;
-    letter-spacing: 0.123rem;
+.footer__phone h4 {
+  padding-left: 20px;
+  letter-spacing: 0.123rem;
 }
 
 .footer__e-mail {
-    padding: 7px 0 40px 0px;
+  padding: 7px 0 40px 0px;
 }
 
 .footer__e-mail h4 {
-    letter-spacing: 0.122rem;
-    padding-left: 20px;
+  letter-spacing: 0.122rem;
+  padding-left: 20px;
 }
 
 .footer__icon-location {
-    width: 22px;
-    height: 32px;
-    background-image: url("../../../assets/images/icons/pin.svg");
-    background-repeat: no-repeat;
-    background-position-x: left;
+  width: 22px;
+  height: 32px;
+  background-image: url("../../../assets/images/icons/pin.svg");
+  background-repeat: no-repeat;
+//   background-position-x: left;
 }
 
 .footer__address-subtitle {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .footer__address1 {
-    padding: 1px 0 32px 0;
-    letter-spacing: 0.12rem;
+  padding: 1px 0 32px 0;
+  letter-spacing: 1.5px;
 }
 
-.footer__address1 h4 span{
-    display: block;
+.footer__address1 h4 span {
+  display: block;
 }
 
 .footer__address2 {
-    letter-spacing: 0.12rem;
+    letter-spacing: 1.5px;
 }
