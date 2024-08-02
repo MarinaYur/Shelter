@@ -3,13 +3,15 @@
 }
 
 .wrapper__addition {
-    padding: 80px 0 101px 143px;;
-
+    display: flex;
+    width: 915px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 80px 0 98px 0px;
 }
 
 .addition__image {
     width: 505px;
-    // height: 261px;
     background-image: url("../../../assets/images/donation-dog.svg");
     background-repeat: no-repeat;
     background-position-y: 11px;
@@ -32,7 +34,7 @@
     color: $color-dark-l;
     letter-spacing: 0.09rem;
     font-weight: 400;
-    padding: 0 0 17px 1px;
+    padding: 0 0 19px 1px;
 
 }
 
