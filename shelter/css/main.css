@@ -48,7 +48,7 @@
   margin: 0 auto;
   padding-bottom: 85px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .header {
     padding-bottom: 57px;
   }
@@ -59,7 +59,7 @@
   justify-content: space-between;
   padding-top: 32px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__content {
     padding-top: 32px;
   }
@@ -190,7 +190,7 @@
   align-items: center;
   flex-shrink: 0;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .item {
     width: 170px;
   }
@@ -457,7 +457,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .wrapper {
     max-width: 708px;
   }
@@ -466,7 +466,7 @@ p {
 .notOnly__content {
   padding-top: 164px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__content {
     padding-top: 0px;
     width: 460px;
@@ -478,7 +478,7 @@ p {
   max-width: 360px;
   padding-bottom: 41px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__title {
     padding-bottom: 40px;
   }
@@ -490,7 +490,7 @@ p {
   max-width: 474px;
   padding-bottom: 41px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__subtitle {
     padding-bottom: 43px;
   }
@@ -499,7 +499,7 @@ p {
 .notOnly__button {
   width: 207px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__button {
     margin: 0 auto;
   }
@@ -510,7 +510,7 @@ p {
   height: 728px;
   background-image: url(../../../assets/images/start-screen-puppy.png);
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__start-screen-puppy {
     height: 608px;
     margin: 0 auto;
@@ -525,7 +525,7 @@ p {
   justify-content: space-between;
   padding-bottom: 1px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly {
     flex-direction: column;
     gap: 84px;
@@ -540,7 +540,7 @@ p {
   background-color: #FFFFFF;
   padding: 1px 0px 100px 40px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about {
     flex-direction: column-reverse;
     width: 437px;
@@ -556,7 +556,7 @@ p {
   background-repeat: no-repeat;
   margin: 80px 120px 0 175px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about__petsImage {
     margin: 79px 0px 0 66px;
   }
@@ -567,7 +567,7 @@ p {
   padding-top: 95px;
   letter-spacing: 2px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about__title {
     padding-top: 80px;
   }
@@ -582,7 +582,7 @@ p {
   padding: 21px 0 0 0;
   width: 437px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about__subtitle {
     padding-top: 23px;
   }
@@ -612,7 +612,7 @@ p {
   margin: 0 auto;
   padding: 68px 0 0px 0px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .ourFriends__wrapper {
     padding: 70px 0 0 0;
   }
@@ -634,7 +634,7 @@ p {
   align-items: center;
   position: relative;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .ourFriends__slider {
     gap: 12px;
   }
@@ -661,7 +661,7 @@ p {
   display: flex;
   gap: 90px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .next,
   .active {
     gap: 40px;
@@ -734,7 +734,7 @@ p {
   transform: scaleX(-1);
   left: -4rem;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .slider__left-arrow {
     left: 3rem;
   }
@@ -751,7 +751,7 @@ p {
   background-position: center;
   right: 4rem;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .slider__right-arrow {
     right: 3rem;
   }
@@ -762,7 +762,7 @@ p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .ourFriends__pet1 {
     padding-right: 40px;
   }
@@ -774,7 +774,7 @@ p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .ourFriends__pet3 {
     display: none;
   }
@@ -797,7 +797,7 @@ p {
   column-gap: 120px;
   row-gap: 55px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .help__items {
     column-gap: 60px;
   }
@@ -845,7 +845,7 @@ p {
   gap: 30px;
   padding: 80px 0 98px 0px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .wrapper__addition {
     align-items: center;
     flex-direction: column-reverse;
@@ -861,7 +861,7 @@ p {
   background-repeat: no-repeat;
   background-position-y: 11px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .addition__image {
     background-position-y: 0px;
   }
@@ -870,7 +870,7 @@ p {
 .addition__content {
   padding: 1px 0px 0 0px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .addition__content {
     width: 380px;
     padding: 0px;
@@ -912,7 +912,7 @@ p {
 .footer__wrapper {
   column-gap: 160px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__wrapper {
     justify-content: center;
     column-gap: 60px;
@@ -924,7 +924,7 @@ p {
   flex-direction: column;
   padding-top: 56px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__date {
     padding-top: 30px;
   }
@@ -961,7 +961,7 @@ p {
   background-position-x: right;
   margin-top: 40px;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__image {
     margin-top: 64px;
   }
@@ -1004,6 +1004,4 @@ p {
 
 .footer__address2 {
   letter-spacing: 1.2px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
