@@ -12,8 +12,9 @@
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
+  padding-bottom: 85px;
   @include media-tablet {
-    padding-top: 32px;
+    padding-bottom: 57px;
   }
 }
 
