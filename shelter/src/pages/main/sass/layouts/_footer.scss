@@ -7,6 +7,9 @@
 .footer__wrapper {
     justify-content: center;
     column-gap: 160px;
+    @include media-point-1 {
+        justify-content: space-around
+    }
     @include media-tablet {
          column-gap: 60px;
     }

@@ -48,6 +48,11 @@
   margin: 0 auto;
   padding-bottom: 85px;
 }
+@media screen and (min-width: 1001px) and (max-width: 1279px) {
+  .header {
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .header {
     padding-bottom: 57px;
@@ -59,6 +64,11 @@
   justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 85px;
+}
+@media screen and (min-width: 1001px) and (max-width: 1279px) {
+  .header__content {
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .header__content {
@@ -554,12 +564,11 @@ p {
   padding: 80px 0 100px 0;
   background-color: #FFFFFF;
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 890px) {
   .about {
     flex-direction: column-reverse;
     gap: 80px;
-    width: 437px;
-    padding: 0px 0 100px 0;
+    padding: 0px 169px 100px 169px;
   }
 }
 
@@ -571,7 +580,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 890px) {
   .about__petsImage {
     align-self: center;
   }
@@ -586,8 +595,9 @@ p {
   max-width: 100%;
   letter-spacing: 2.4px;
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 890px) {
   .about__title {
+    width: 100%;
     padding-top: 82px;
   }
 }
@@ -602,8 +612,9 @@ p {
   width: 437px;
   max-width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 890px) {
   .about__subtitle {
+    width: 100%;
     padding-top: 23px;
   }
 }
@@ -944,6 +955,11 @@ p {
 .footer__wrapper {
   justify-content: center;
   column-gap: 160px;
+}
+@media screen and (min-width: 1001px) and (max-width: 1279px) {
+  .footer__wrapper {
+    justify-content: space-around;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .footer__wrapper {

@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
   gap: 120px;
-//   max-width: 1280px;
+  //   max-width: 1280px;
   margin: 0 auto;
   padding: 80px 0 100px 0;
   background-color: $color-light-xl;
-//   padding: 1px 0px 100px 40px;
-  @include media-tablet {
+  //   padding: 1px 0px 100px 40px;
+  @media screen and (min-width: 768px) and (max-width: 890px) {
     flex-direction: column-reverse;
     gap: 80px;
-   width: 437px;
-   padding: 0px 0 100px 0;
+    // width: 437px;
+    padding: 0px 169px 100px 169px;
   }
-
 }
 
 .about__petsImage {
@@ -23,24 +22,28 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-//   margin: 80px 120px 0 175px;
-  @include media-tablet {
+  //   margin: 80px 120px 0 175px;
+  @media screen and (min-width: 768px) and (max-width: 890px) {
     align-self: center;
     // margin: 79px 0px 0 66px;
   }
 }
 
 .about__content {
-    align-self: center;
+  align-self: center;
+//   @media screen and (min-width: 768px) and (max-width: 890px) {
+//     width: 100%;
+//     padding: 0px 169px 100px 169px;
+// }
 }
 
 .about__title {
   width: 323px;
   max-width: 100%;
-//   padding-top: 95px;
+  //   padding-top: 95px;
   letter-spacing: 2.4px;
-  @include media-tablet {
-    // width: 74%;
+  @media screen and (min-width: 768px) and (max-width: 890px) {
+    width: 100%;
     padding-top: 82px;
   }
 }
@@ -51,8 +54,8 @@
   padding: 23px 0 0 0;
   width: 437px;
   max-width: 100%;
-  @include media-tablet {
-    // width: 100%;
+  @media screen and (min-width: 768px) and (max-width: 890px){
+    width: 100%;
     padding-top: 23px;
   }
 }
