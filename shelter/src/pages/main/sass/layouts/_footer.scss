@@ -7,7 +7,10 @@
   @include media-tablet-large {
     padding-top: 15px;
   }
-  @include media-mobile {
+  @include media-mobile-middle {
+    padding-top: 15px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     & h4 {
       font-size: 20px;
       line-height: 23px;
@@ -27,7 +30,11 @@
     column-gap: 60px;
     row-gap: 63px;
   }
-  @include media-mobile {
+  @include media-mobile-middle {
+    column-gap: 60px;
+    row-gap: 63px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     row-gap: 41px;
     padding: 0 10px;
   }
@@ -37,7 +44,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 17px;
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     padding-top: 0px;
     h3 {
       text-align: center;
@@ -47,7 +54,7 @@
 
 .footer__contacts {
   gap: 39px;
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     align-items: stretch;
   }
 }
@@ -55,14 +62,14 @@
 .footer__title {
   color: $color-light-xl;
   letter-spacing: 2px;
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     letter-spacing: 1.5px;
   }
 }
 
 .footer__title span {
   display: block;
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     display: inline;
   }
 }
@@ -71,7 +78,7 @@
   width: 302px;
   max-width: 100%;
   gap: 32px;
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     gap: 39px;
     .footer__title {
       letter-spacing: 1.8px;
@@ -81,7 +88,7 @@
 
 .footer__address h3 {
   width: 91%;
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     width: 100%;
   }
 }
@@ -93,10 +100,7 @@
   background-image: url("../../../assets/images/footer-puppy.svg");
   background-repeat: no-repeat;
   background-position-x: right;
-  // @include media-tablet-large {
-  //   margin-top: 64px;
-  // }
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     width: 260px;
     height: 269px;
     background-size: contain;
@@ -117,7 +121,7 @@
 }
 
 .footer__phone {
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     justify-content: center;
   }
 }
@@ -127,7 +131,7 @@
 }
 
 .footer__e-mail {
-  @include media-mobile {
+  @media screen and (min-width: 320px) and (max-width: 620px) {
     align-self: center;
   }
 }

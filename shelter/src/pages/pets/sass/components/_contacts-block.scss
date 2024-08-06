@@ -2,4 +2,5 @@
     color: $color-primary;
     @extend %flex-start;
     text-decoration: none;
+    gap: 20px;
 }
