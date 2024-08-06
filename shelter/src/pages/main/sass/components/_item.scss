@@ -7,11 +7,13 @@
     height: 113px;
     align-items: center;
     flex-shrink: 0;
-    @include media-tablet {
+    @include media-tablet-large {
         width: 170px;
     }
     @include media-mobile {
-        height: 90px;
+        width: 130px;
+        height: 87px;
+        row-gap: 20px;
     }
 }
 
@@ -22,6 +24,7 @@
         width: 50px;
         height: 50px;
         background-size: contain;
+        background-repeat: no-repeat;
     }
 }
 
@@ -35,11 +38,17 @@
     background-image: url("../../../assets/images/icons/icon-transportation.svg");
 }
 
+.item h4 {
+    @include media-mobile {
+        line-height: 17px;
+    }
+}
+
 .item__title2{
     // margin-left: -21px;
     letter-spacing: 0.12rem;
     @include media-mobile {
-        margin-left: 2px;
+        // margin-left: 2px;
         letter-spacing: 0.093rem;
     }
 }
@@ -48,7 +57,7 @@
     // margin-left: 27px;
     background-image: url("../../../assets/images/icons/icon-toys.svg");
     @include media-mobile {
-        margin-left: 1px;
+        // margin-left: 1px;
     }
 }
 
@@ -56,7 +65,7 @@
     // margin-left: 35px;
     letter-spacing: 0.15rem;
     @include media-mobile {
-        margin-left: 8px;
+        // margin-left: 8px;
         letter-spacing: 0.1rem;
     }
 }
@@ -104,6 +113,9 @@
 
 .item__title8{
     letter-spacing: 0.122rem;
+    @include media-mobile {
+        letter-spacing: 0.1rem;
+    }
 }
 
 .item__image9 {
@@ -112,4 +124,7 @@
 
 .item__title9{
     letter-spacing: 0.13rem;
+    @include media-mobile {
+        letter-spacing: 0.1rem;
+    }
 }

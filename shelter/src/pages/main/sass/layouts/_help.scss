@@ -9,14 +9,22 @@
     letter-spacing: 1px;
     column-gap: 120px;
     row-gap: 55px;
-    @include media-tablet {
+    @include media-tablet-large {
         column-gap: 60px;
+    }
+    @include media-mobile{
+        justify-content: flex-start;
+        gap: 30px;
+        padding-top: 41px;
     }
 }
 
 .help__wrapper {
     padding-bottom: 100px;
     padding-top: 81px;
+    @include media-mobile {
+        padding: 42px 15px 42px 15px;
+    }
 }
 
 .help_title {
@@ -26,4 +34,7 @@
     white-space: pre-line;
     letter-spacing: 0.21rem;
     padding-left: 3px;
+    @include media-mobile {
+        letter-spacing: 1.5px;
+    }
 }

@@ -2,16 +2,18 @@
   display: flex;
   justify-content: center;
   gap: 120px;
-  //   max-width: 1280px;
-  margin: 0 auto;
   padding: 80px 0 100px 0;
   background-color: $color-light-xl;
-  //   padding: 1px 0px 100px 40px;
-  @media screen and (min-width: 768px) and (max-width: 890px) {
+  transition: 0.5s;
+  @include media-tablet {
     flex-direction: column-reverse;
     gap: 80px;
-    // width: 437px;
-    padding: 0px 169px 100px 169px;
+    padding: 0px 169px 99px 169px;
+  }
+  @include media-mobile {
+    flex-direction: column-reverse;
+    gap: 41px;
+    padding: 43px 15px 42px 15px;
   }
 }
 
@@ -22,49 +24,65 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  //   margin: 80px 120px 0 175px;
-  @media screen and (min-width: 768px) and (max-width: 890px) {
+  @include media-tablet {
     align-self: center;
-    // margin: 79px 0px 0 66px;
+  }
+  @include media-mobile {
+    align-self: center;
+    width: 260px;
+    max-width: 100%;
+    height: 353.6px;
   }
 }
 
 .about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   align-self: center;
-//   @media screen and (min-width: 768px) and (max-width: 890px) {
-//     width: 100%;
-//     padding: 0px 169px 100px 169px;
-// }
+  width: 430px;
+  @include media-mobile {
+    gap: 22px;
+    width: 100%;
+  }
 }
 
 .about__title {
-  width: 323px;
-  max-width: 100%;
-  //   padding-top: 95px;
-  letter-spacing: 2.4px;
-  @media screen and (min-width: 768px) and (max-width: 890px) {
-    width: 100%;
+  // width: 323px;
+  width: 96%;
+  letter-spacing: 2.2px;
+  @include media-tablet {
+    width: 96%;
     padding-top: 82px;
+  }
+  @include media-mobile {
+    text-align: center;
+    width: 100%;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    padding-bottom: 3px;
   }
 }
 
 .about__subtitle {
   @include font(1.5rem, 2.4rem);
   color: $color-dark-xl;
-  padding: 23px 0 0 0;
-  width: 437px;
-  max-width: 100%;
-  @media screen and (min-width: 768px) and (max-width: 890px){
+  // padding: 23px 0 0 0;
+  // width: 437px;
+  // max-width: 100%;
+  @include media-tablet {
     width: 100%;
-    padding-top: 23px;
+  }
+  @include media-mobile {
+    text-align: justify;
+    width: 100%;
+    padding: 0 10px;
   }
 }
 
-.about__subtitle1 {
-  letter-spacing: 0.005rem;
-  padding-bottom: 25px;
-}
-
-.about__subtitle2 {
-  letter-spacing: 0.008rem;
-}
+// .about__subtitle1 {
+//   padding-bottom: 25px;
+//   @include media-mobile {
+//     padding-bottom: 22px;
+//   }
+// }

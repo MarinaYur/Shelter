@@ -6,6 +6,7 @@
     border-radius: 0.9rem;
     @include media-mobile {
         max-width: 281px;
+        margin: 0 auto;
     }
 }
 
