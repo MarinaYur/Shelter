@@ -14,13 +14,17 @@
   </head>
   <body>
     <div class="header-notOnly">
-      <header class="header">
+      <header class="header wrapper">
         <!-- <div class="wrapper header__wrapper"> -->
-        <div class="wrapper header__content">
+        <div class="header__content">
           <a href="#" class="logo">
             <h1 class="logo__title">Cozy House</h1>
             <p class="logo__subtitle">Shelter for pets in Boston</p>
           </a>
+          <span class="header__humburger humburger">
+            <span class="humburger__line">
+            </span>
+          </span>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__list-item">
@@ -49,9 +53,9 @@
 
       <section class="wrapper notOnly">
         <div class="notOnly__content">
-          <h2 class="notOnly__title">Not only people need a house</h2>
+          <h2 class="notOnly__title">Not only people <br> need a house</h2>
           <p class="notOnly__subtitle">
-            We offer to give a chance to a little and nice puppy with an
+            <span class="first-row">We offer to give a chance to a little and nice</span> puppy with an
             extremely wide and open heart. He or she will love you more than
             anybody else in the world, you will see!
           </p>
@@ -60,23 +64,25 @@
             <a href="#ourFriends" class="notOnly__link"> Make a friend </a>
           </div>
         </div>
-        <div class="notOnly__start-screen-puppy"></div>
+        <div class="notOnly__start-screen-puppy">
+            <!-- <img src="/src/assets/images/start-screen-puppy.png" width="" height="" alt=""> -->
+        </div>
       </section>
     </div>
 
     <main>
-      <section class="about about__wrapper">
+      <section class="about about__wrapper wrapper">
         <div class="about__petsImage"></div>
         <div class="about__content">
           <h3 class="about__title">About the shelter “Cozy House”</h3>
-          <div class="about__subtitle">
-            <p class="about__subtitle1">
+          <!-- <div class="about__subtitle"> -->
+            <p class="about__subtitle about__subtitle1">
               Currently we have 121 dogs and 342 cats on our hands and
               statistics show that only 20% of them will find a family. The
               others will continue to live with us and will be waiting for a
               lucky chance to become dearly loved.
             </p>
-            <p class="about__subtitle2">
+            <p class="about__subtitle about__subtitle2">
               We feed our wards with the best food and make sure that they do
               not get sick, feel comfortable (including psychologically) and
               well. We are supported by 87 volunteers and 28 employees of
@@ -85,7 +91,7 @@
               the pets and would hardly ever leave them alone.
             </p>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="ourFriends" id="ourFriends">
@@ -216,7 +222,7 @@
       </section>
 
       <section class="addition">
-        <div class="wrapper wrapper__addition layout-2-column">
+        <div class="wrapper wrapper__addition">
           <div class="addition__image"></div>
           <div class="addition__content">
             <h3 class="addition__title">You can also <br> make a donation</h3>
@@ -242,7 +248,7 @@
 
     <footer class="footer" id="footer">
       <div class="footer__wrapper wrapper layout-3-column">
-        <div class="footer__contacts">
+        <div class="footer__contacts footer__date">
           <h3 class="footer__title">
             For questions <span>and suggestions</span>
           </h3>
@@ -258,7 +264,7 @@
             <h4 class="footer-contact">+13 674 567 75 54</h4>
           </a>
         </div>
-        <div class="footer__address">
+        <div class="footer__address footer__date">
           <h3 class="footer__title">
             We are waiting <span>for your visit</span>
           </h3>

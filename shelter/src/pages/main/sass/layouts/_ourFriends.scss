@@ -1,102 +1,150 @@
 .ourFriends {
-    padding: 11px 0 99px 0;
-    position: relative;
-    background-color: $color-light-l;
+  padding: 11px 0 100px 0;
+  position: relative;
+  background-color: $color-light-l;
+  transition: 0.5s;
+  @include media-mobile {
+    padding: 11px 0 42px 0;
+  }
 }
 
 .ourFriends__wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 68px 0 0px 81px;
-    // margin-left: auto;
-    // margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 68px 0 0px 0px;
+  @include media-tablet-large {
+    padding: 71px 0 0 0;
+  }
+  @include media-tablet {
+    padding: 71px 0 0 0;
+    gap: 59px;
+  }
+  @include media-mobile {
+    gap: 42px;
+    padding-top: 31px;
+  }
 }
 
 .ourFriends__button {
-    width: 261px;
-    margin: 61px 0 0 429px;
+  width: 261px;
+  margin: auto;
 }
 
 .ourFriends__title {
-    text-align: center;
-    letter-spacing: 0.2rem;
-    width: 1119px;
-    // margin: 0 auto;
-    // white-space: pre-line;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  @include media-mobile {
+    line-height: 32.5px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .ourFriends__slider {
-    padding: 58px 0 0 65px;
-    position: relative;
+  display: flex;
+  gap: 55px;
+  align-items: center;
+  position: relative;
+  @media screen and (min-width: 769px) and (max-width: 1279px) {
+    gap: 0px;
+    justify-content: space-between;
+  }
+
+  @include media-tablet-large {
+    gap: 13px;
+  }
+  @include media-mobile {
+    gap: 140px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 550px) {
+    row-gap: 19px;
+    column-gap: 40%;
+  }
+  @media screen and (max-width: 320px) {
+    row-gap: 19px;
+    column-gap: 29%;
+  }
 }
 
 .slider_container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
 }
 
 .block {
-    position: relative;
-    display: none;
-    margin-right: 161px;
-    animation: 0.5s ease-in-out;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  display: none;
+  //   margin-right: 161px;
+  animation: 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 
 .next,
 .active {
-    display: flex;
+  display: flex;
+  gap: 90px;
+  @media screen and (max-width: 1279px) {
+    gap: 1.03%;
+  }
+  @include media-tablet-large {
+    gap: 40px;
+  }
+
+  @include media-mobile {
+  }
 }
 
 .next {
-    position: absolute;
-    top: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .to-left {
-    animation-name: left;
+  animation-name: left;
 }
 
 .from-right {
-    animation-name: right;
+  animation-name: right;
 }
 
 .to-right {
-    animation-name: right;
-    animation-direction: reverse;
+  animation-name: right;
+  animation-direction: reverse;
 }
 
 .from-left {
-    animation-name: left;
-    animation-direction: reverse;
+  animation-name: left;
+  animation-direction: reverse;
 }
 
 @keyframes left {
-    from {
-        left: 0;
-    }
-    to {
-        left: -100%;
-    }
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
 }
 
 @keyframes right {
-    from {
-        left: 100%;
-    }
-    to {
-        left: 0;
-    }
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
-
-
-
-
 
 // .right_block {
 //     transform: translateX(100%);
@@ -121,88 +169,78 @@
 // }
 
 .slider__pets {
-    width: 87%;
-    @include media-mobile {
-        margin: 0 auto;
-    }
+  // width: 990px;
+  // max-width: 100%;
+  @include media-mobile {
+    order: 1;
+  }
 }
 
 .slider__arrow {
-    width: 52px;
-    height: 52px;
-    border: 2px solid $color-primary;
-    border-radius: 50%;
-    position: absolute;
-    top: 25.2rem;
-    cursor: pointer;
-    transition: 0.5s;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color-primary;
+  border-radius: 50%;
+  top: 25.2rem;
+  cursor: pointer;
+  transition: 0.5s;
 
-        &:hover {
-            background-color: $color-primary-light;
-            border: 2px solid $color-primary-light;
-        }
-    @include media-mobile {
-        top: 49.6rem;
-    }
+  &:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+  }
+  @include media-mobile {
+    top: 49.6rem;
+  }
 }
 
 .slider__left-arrow {
-    background-image: url("../../../assets/images/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: scaleX(-1);
-    left: -4rem;
-    @include media-tablet {
-        left: 3rem;
-    }
-    @include media-mobile {
-        left: 6.78rem;
-    }
+  background-image: url("../../../assets/images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scaleX(-1);
+  // left: -4rem;
+  // @include media-tablet-large {
+  //   left: 3rem;
+  // }
+  @include media-mobile {
+    order: 2;
+  }
 }
 
 .slider__right-arrow {
-    background-image: url("../../../assets/images/arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    right: 4rem;
-    @include media-tablet {
-        right: 3rem;
-    }
-    @include media-mobile {
-        right: 6.78rem;
-    }
-}
-
-.ourFriends__button {
-    @include media-tablet {
-        margin: 59px 0 0 253px;
-    }
-    @include media-mobile {
-        margin: 42px 0 0 30px;
-    }
+  background-image: url("../../../assets/images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  // right: 4rem;
+  // @include media-tablet-large {
+  //   right: 3rem;
+  // }
+  @include media-mobile {
+    order: 3;
+  }
 }
 
 .ourFriends__pet1 {
-    @include media-tablet {
-        padding-right: 40px;
-    }
-    // @include media-mobile {
-    //     width: 270px;
-    //     height: 507px;
-    // }
+  @include media-tablet-large {
+    // padding-right: 40px;
+  }
 }
 
-.ourFriends__pet2{
-    @include media-mobile {
-        display: none;
-    }
+.ourFriends__pet2 {
+  @media screen and (min-width: 320px) and (max-width: 550px) {
+    display: none;
+  }
+  @include media-mobile {
+    // display: none;
+  }
 }
 
 .ourFriends__pet3 {
-    @include media-tablet {
-        display: none;
-    }
-    @include media-mobile {
-        display: none;
-    }
+  @include media-tablet-large {
+    display: none;
+  }
+  @include media-mobile {
+    display: none;
+  }
 }

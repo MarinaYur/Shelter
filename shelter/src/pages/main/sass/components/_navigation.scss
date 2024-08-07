@@ -1,6 +1,9 @@
 .nav {
     width: 443px;
     padding-top: 15px;
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .nav__list {

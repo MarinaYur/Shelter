@@ -1,79 +1,131 @@
 .ourFriends {
-    background-color: $color-light-l;
-    padding-bottom: 100px;
+  background-color: $color-light-l;
+  padding-bottom: 100px;
+  transition: 0.5s;
+
+  @include media-all-tablet {
+    padding-bottom: 77px;
+  }
+  @include media-mobile {
+    padding-bottom: 42px;
+  }
 }
 
 .wrapper__ourFriends {
-    padding: 25px 0 100px 0;
+  padding: 25px 0 100px 0;
 }
 
 .ourFriends__button {
-    width: 261px;
-    margin: 60px 0 0 430px;
+  width: 261px;
+  margin: 60px 0 0 430px;
 }
 
 .ourFriends__title {
-    text-align: center;
-    letter-spacing: 0.2rem;
-    padding: 8rem 0px 0 0;
-    width: 524px;
-    margin: 0 auto;
-    white-space: pre-line;
+  text-align: center;
+  letter-spacing: 2.1px;
+  padding: 8rem 0px 0 0;
+  width: 524px;
+  margin: 0 auto;
+  white-space: pre-line;
+  @include media-mobile {
+    padding-top: 42px;
+    max-width: 100%;
+    letter-spacing: 1.2px;
+  }
 }
 
 .ourFriends__slider {
-    padding: 59px 0 0 0px;
+  padding: 59px 0 0 0px;
+  transition: 0.5s;
+  @include media-all-tablet {
+    padding-top: 29px;
+  }
+  @include media-mobile {
+    padding-top: 41px;
+  }
 }
 
-.slider__pets-row1 {
-    padding-bottom: 30px;
+.slider__pets {
+  @include media-all-tablet {
+    column-gap: 40px;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  @include media-mobile {
+  justify-content: center;
+  row-gap: 30px;
+  }
 }
 
 .slider__arrows {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 34rem;
-    padding: 60px 0 0 0;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 34rem;
+  padding: 60px 0 0 0;
+  margin: 0 auto;
+  @include media-all-tablet {
+    padding-top: 40px;
+  }
+  @include media-mobile {
+    width: 300px;
+    padding-top: 42px
+  }
 }
 
 .slider__arrows div {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 49px;
-    width: 5.2rem;
-    height: 5.2rem;
-    border-radius: 50%;
-    text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 49px;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .slider__arrows div h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 49px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 49px;
 }
 
 .slider__arrows_left {
-    color: $color-dark-s;
-    border: 2px solid $color-dark-s;
+  color: $color-dark-s;
+  border: 2px solid $color-dark-s;
 }
 
 .slider__arrows_number-of-page {
-    color: $color-dark-3xl;
-    background: $color-primary;
+  color: $color-dark-3xl;
+  background: $color-primary;
 }
 
 .slider__arrows_right {
+  color: $color-dark-3xl;
+  border: 2px solid $color-primary;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
 
-    color: $color-dark-3xl;
-    border: 2px solid $color-primary;
-    cursor: pointer;
-    &:hover {
+.pet7,
+.pet8 {
+  @include media-all-tablet {
+    display: none;
+  }
+  @include media-mobile {
+    display: none;
+  }
+}
 
-    }
+.pet4,
+.pet5,
+.pet6 {
+  @include media-mobile {
+    display: none;
+  }
 }

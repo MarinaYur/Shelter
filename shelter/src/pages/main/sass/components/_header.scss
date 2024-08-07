@@ -1,9 +1,15 @@
 .header {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
   padding-bottom: 85px;
-  @include media-tablet {
+  @include media-desctop-small {
+    padding-bottom: 60px;
+  };
+  @include media-tablet-large {
+    padding-bottom: 57px;
+  }
+  @include media-mobile {
     padding-bottom: 57px;
   }
 }
@@ -12,24 +18,41 @@
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
-  @include media-tablet {
-    padding-top: 32px;
+  padding-bottom: 85px;
+  @include media-desctop-small {
+    padding-bottom: 60px;
+  };
+
+  @include media-tablet-large {
+    padding-bottom: 57px;
+  }
+  @include media-mobile {
+    padding-bottom: 55px;
   }
 }
 
 .logo {
   padding-left: 4px;
   text-decoration: none;
-
+  @include media-mobile {
+    padding-left: 0px;
+  }
 }
 
 .logo__title {
-    letter-spacing: 1.3px;
+  letter-spacing: 1.3px;
+  @include media-mobile {
+    letter-spacing: 1.9px;
+  }
 }
 
 .logo__subtitle {
-    padding-top: 3px;
-    @include font(1.3rem, auto);
-    color: $color-light-xl;
-    letter-spacing: 1.2px;
+  padding-top: 3px;
+  @include font(1.3rem, auto);
+  color: $color-light-xl;
+  letter-spacing: 1.2px;
+  @include media-mobile {
+    padding: 4px 0 0 4px;
+    letter-spacing: 1.3px;
   }
+}

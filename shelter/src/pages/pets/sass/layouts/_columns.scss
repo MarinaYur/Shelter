@@ -1,17 +1,12 @@
 .layout-2-column {
-    @include columns($width: 50%);
+    @include columns($width: 49.5%);
     flex-wrap: nowrap;
 }
 
 .layout-3-column{
-    @include columns($width:33.3%);
+    @include columns($width:auto);
 }
 
 .layout-4-column {
     @include columns($width:20%);
-}
-
-.layout-9-column-in-2-rows{
-    @include columns($width:20%);
-    justify-content: space-evenly;
 }

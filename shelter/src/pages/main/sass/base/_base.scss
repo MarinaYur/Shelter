@@ -9,13 +9,11 @@
 
 html {
     font-size: 10px;
-    // background-color: $page-background;
     scroll-behavior: smooth;
 }
 
 body {
     overflow: visible;
-    // max-width: 1280px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     @include font($size: 1.6rem, $height: 2.4rem);
@@ -29,26 +27,25 @@ h1 {
 
 h2 {
     font-family: Georgia;
-    @include font (4.4rem, 130%);
-    @include media-mobile {
-        font-size: 2.5rem;
-    }
+    @include font (4.4rem, 57.2px);
+    // @include media-mobile {
+    //     font-size: 2.5rem;
+    // }
     color: $color-light-xl;
 }
 
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: $color-dark-l;
-    letter-spacing: 6%;
-    @include font (3.5rem, 130%);
+    @include font (3.5rem, 45.5px);
     @include media-mobile {
+        line-height: 32.5px ;
         font-size: 2.5rem;
     }
 }
 
 h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 6%;
     @include font (2rem, 2.3rem);
     @include media-mobile {
         font-size: 1.5rem;

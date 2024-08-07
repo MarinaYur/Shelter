@@ -1,6 +1,9 @@
 .header {
     padding-bottom: 22px;
     background-color: $color-light-xl;
+    @include media-mobile {
+        padding: 0px 10px 22px 10px;
+    }
 }
 
 .header__content {
