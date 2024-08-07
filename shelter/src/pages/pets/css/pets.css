@@ -9,10 +9,20 @@
   width: 443px;
   padding-top: 15px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 
 .nav__list {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__list {
+    flex-direction: column;
+  }
 }
 
 .nav__list-item {
@@ -25,18 +35,16 @@
 
 .nav__list-link {
   text-decoration: none;
-  color: #545454;
-  padding-bottom: 4px;
+  color: #CDCDCD;
   transition: 0.5s;
 }
-.nav__list-link:hover {
-  color: #292929;
-}
-
 .nav__list-link--active {
-  color: #292929;
+  color: #FAFAFA;
   border-bottom: solid 3px #F1CDB3;
-  cursor: default;
+  padding-bottom: 0.4rem;
+}
+.nav__list-link:hover {
+  color: #FAFAFA;
 }
 
 .logo__title {
@@ -164,6 +172,40 @@
   gap: 20px;
 }
 
+.humburger {
+  display: none;
+  top: 17px;
+  height: 22px;
+  width: 30px;
+  position: relative;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .humburger {
+    top: 18px;
+    display: inline-block;
+  }
+}
+
+.humburger__line {
+  top: calc(50% - 1px);
+  left: 0;
+}
+
+.humburger:before, .humburger:after, .humburger__line {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.humburger:after {
+  bottom: 0;
+  left: 0;
+}
+
 @font-face {
   font-family: Arial;
   src: url("../../../assets/fonts/ArialRegular.eot");
@@ -237,6 +279,7 @@ h3 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   h3 {
+    line-height: 32.5px;
     font-size: 2.5rem;
   }
 }
@@ -275,6 +318,11 @@ p {
   padding-bottom: 22px;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding: 0px 10px 22px 10px;
+  }
+}
 
 .header__content {
   display: flex;
@@ -300,7 +348,7 @@ p {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .wrapper {
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
   }
 }
 
@@ -335,10 +383,16 @@ p {
 .ourFriends {
   background-color: #F6F6F6;
   padding-bottom: 100px;
+  transition: 0.5s;
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .ourFriends {
-    padding-bottom: 76px;
+    padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .ourFriends {
+    padding-bottom: 42px;
   }
 }
 
@@ -359,13 +413,26 @@ p {
   margin: 0 auto;
   white-space: pre-line;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .ourFriends__title {
+    padding-top: 42px;
+    max-width: 100%;
+    letter-spacing: 1.2px;
+  }
+}
 
 .ourFriends__slider {
   padding: 59px 0 0 0px;
+  transition: 0.5s;
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .ourFriends__slider {
     padding-top: 29px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .ourFriends__slider {
+    padding-top: 41px;
   }
 }
 
@@ -374,6 +441,12 @@ p {
     column-gap: 40px;
     row-gap: 30px;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .slider__pets {
+    justify-content: center;
+    row-gap: 30px;
   }
 }
 
@@ -388,6 +461,12 @@ p {
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .slider__arrows {
     padding-top: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .slider__arrows {
+    width: 300px;
+    padding-top: 42px;
   }
 }
 
@@ -431,7 +510,22 @@ p {
 }
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
-  .pet7, .pet8 {
+  .pet7,
+  .pet8 {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .pet7,
+  .pet8 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .pet4,
+  .pet5,
+  .pet6 {
     display: none;
   }
 }
@@ -444,7 +538,7 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .footer {
-    padding-top: 13px;
+    padding-top: 12px;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 767px) {

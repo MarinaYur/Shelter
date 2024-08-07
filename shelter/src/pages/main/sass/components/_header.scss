@@ -9,6 +9,9 @@
   @include media-tablet-large {
     padding-bottom: 57px;
   }
+  @include media-mobile {
+    padding-bottom: 57px;
+  }
 }
 
 .header__content {

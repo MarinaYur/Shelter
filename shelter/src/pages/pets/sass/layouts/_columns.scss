@@ -7,13 +7,6 @@
     @include columns($width:auto);
 }
 
-.layout-9-column-in-2-rows{
-    // @include columns($width:20%);
-    // justify-content: space-evenly;
-}
-
-
-
 .layout-4-column {
     @include columns($width:20%);
 }
