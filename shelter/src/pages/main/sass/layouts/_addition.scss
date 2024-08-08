@@ -7,11 +7,11 @@
   width: 915px;
   margin: 0 auto;
   gap: 30px;
-  padding: 80px 0 98px 0px;
+  padding: 80px 0 99px 0px;
   @include media-tablet-large {
     align-items: center;
     flex-direction: column-reverse;
-    row-gap: 59px;
+    row-gap: 60px;
     padding: 80px 0 91px 0px;
   }
   @include media-mobile {
@@ -82,13 +82,11 @@
   @include font(1.2rem, 1.8rem, $style: italic);
   line-height: 1.8rem;
   color: $color-dark-m;
-//   padding: 21px 0 0 0;
   width: 362px;
   max-width: 100%;
   letter-spacing: 0.0023rem;
   @include media-mobile {
     width: 100%;
     text-align: justify;
-    // padding: 19px 10px 0 10px;
   }
 }

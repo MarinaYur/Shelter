@@ -48,12 +48,11 @@
 }
 
 .about__title {
-  // width: 323px;
   width: 96%;
   letter-spacing: 2.2px;
   @include media-tablet {
     width: 96%;
-    padding-top: 82px;
+    padding-top: 80px;
   }
   @include media-mobile {
     text-align: center;
@@ -67,9 +66,6 @@
 .about__subtitle {
   @include font(1.5rem, 2.4rem);
   color: $color-dark-xl;
-  // padding: 23px 0 0 0;
-  // width: 437px;
-  // max-width: 100%;
   @include media-tablet {
     width: 100%;
   }
@@ -79,10 +75,3 @@
     padding: 0 10px;
   }
 }
-
-// .about__subtitle1 {
-//   padding-bottom: 25px;
-//   @include media-mobile {
-//     padding-bottom: 22px;
-//   }
-// }

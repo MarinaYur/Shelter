@@ -94,7 +94,7 @@
   transition: 0.5s;
   @include media-tablet-large {
     flex-direction: column;
-    gap: 98px;
+    gap: 100px;
   }
   @include media-mobile {
     flex-direction: column;
