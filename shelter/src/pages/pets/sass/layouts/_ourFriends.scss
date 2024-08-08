@@ -4,7 +4,7 @@
   transition: 0.5s;
 
   @include media-all-tablet {
-    padding-bottom: 77px;
+    padding-bottom: 76px;
   }
   @include media-mobile {
     padding-bottom: 42px;
@@ -46,6 +46,7 @@
 }
 
 .slider__pets {
+    gap: 30px;
   @include media-all-tablet {
     column-gap: 40px;
     row-gap: 30px;
