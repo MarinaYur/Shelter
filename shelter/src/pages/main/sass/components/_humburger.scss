@@ -5,6 +5,7 @@
   width: 30px;
   position: relative;
   @include media-mobile {
+    z-index: 1;
     display: inline-block;
   }
 }
