@@ -2,7 +2,7 @@
   width: 443px;
   padding-top: 15px;
   @include media-mobile {
-    // display: none;
+    display: none;
     position: absolute;
     top: 0;
     right: 0px;
@@ -11,8 +11,7 @@
     background-color: #292929;
     text-align: center;
     padding-top: 249px;
-    // -webkit-transform: translateX(100%);
-    // transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
@@ -42,7 +41,10 @@
   &--active {
     color: $color-light-s;
     border-bottom: solid 3px $color-primary;
-    padding-bottom: 6px;
+    padding-bottom: 3px;
+    @include media-mobile {
+        padding-bottom: 6px;
+    }
   }
   &:hover {
     color: $color-light-s;

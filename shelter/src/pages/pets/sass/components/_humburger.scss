@@ -24,6 +24,9 @@
   height: 2px;
   background-color: $black;
   border-radius: 2px;
+  @include media-mobile {
+    background-color: #000000;
+  }
 }
 
 .humburger:after {

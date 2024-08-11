@@ -11,6 +11,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav {
+    display: none;
     position: absolute;
     top: 0;
     right: 0px;
@@ -19,6 +20,7 @@
     background-color: #292929;
     text-align: center;
     padding-top: 249px;
+    transform: translateX(100%);
   }
 }
 
@@ -55,7 +57,12 @@
 .nav__list-link--active {
   color: #FAFAFA;
   border-bottom: solid 3px #F1CDB3;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__list-link--active {
+    padding-bottom: 6px;
+  }
 }
 .nav__list-link:hover {
   color: #FAFAFA;
