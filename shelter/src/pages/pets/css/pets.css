@@ -12,6 +12,15 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 320px;
+    height: 823px;
+    background-color: #292929;
+    text-align: center;
+    padding-top: 249px;
+    transform: translateX(100%);
   }
 }
 
@@ -22,6 +31,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav__list {
     flex-direction: column;
+    gap: 41px;
   }
 }
 
@@ -31,6 +41,12 @@
   font-weight: 400;
   line-height: 2.4rem;
   list-style-type: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__list-item {
+    line-height: 51px;
+    font-size: 32px;
+  }
 }
 
 .nav__list-link {
@@ -42,6 +58,11 @@
   color: #545454;
   border-bottom: solid 3px #F1CDB3;
   padding-bottom: 0.4rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__list-link--active {
+    padding-bottom: 6px;
+  }
 }
 .nav__list-link:hover {
   color: #292929;
@@ -181,6 +202,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .humburger {
+    z-index: 1;
     top: 18px;
     display: inline-block;
   }
@@ -199,6 +221,11 @@
   height: 2px;
   background-color: #000000;
   border-radius: 2px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .humburger:before, .humburger:after, .humburger__line {
+    background-color: #000000;
+  }
 }
 
 .humburger:after {
@@ -541,7 +568,7 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   .footer {
-    padding-top: 12px;
+    padding-top: 13px;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 767px) {

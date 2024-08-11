@@ -12,6 +12,15 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 320px;
+    height: 823px;
+    background-color: #292929;
+    text-align: center;
+    padding-top: 249px;
+    transform: translateX(100%);
   }
 }
 
@@ -22,6 +31,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav__list {
     flex-direction: column;
+    gap: 41px;
   }
 }
 
@@ -32,6 +42,12 @@
   line-height: 2.4rem;
   list-style-type: none;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__list-item {
+    line-height: 51px;
+    font-size: 32px;
+  }
+}
 
 .nav__list-link {
   text-decoration: none;
@@ -41,7 +57,12 @@
 .nav__list-link--active {
   color: #FAFAFA;
   border-bottom: solid 3px #F1CDB3;
-  padding-bottom: 0.4rem;
+  padding-bottom: 3px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__list-link--active {
+    padding-bottom: 6px;
+  }
 }
 .nav__list-link:hover {
   color: #FAFAFA;
@@ -407,6 +428,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .humburger {
+    z-index: 1;
     display: inline-block;
   }
 }
