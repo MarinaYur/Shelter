@@ -46,12 +46,14 @@
         line-height: 51px;
         font-size: 32px;
     }
+
 }
 
 .nav__list-link {
-    text-decoration: none;
-    color: $color-dark-s;
-    transition: 0.5s;
+  text-decoration: none;
+  color: $color-dark-s;
+  transition: 0.5s;
+
 
         &--active {
             color: $color-light-s;
@@ -62,3 +64,4 @@
             color: $color-light-s;
         }
 }
+

@@ -5,6 +5,7 @@
   width: 30px;
   position: relative;
   @include media-mobile {
+    z-index: 1;
     top: 18px;
     display: inline-block;
   }
@@ -23,6 +24,9 @@
   height: 2px;
   background-color: $black;
   border-radius: 2px;
+  @include media-mobile {
+    background-color: #000000;
+  }
 }
 
 .humburger:after {

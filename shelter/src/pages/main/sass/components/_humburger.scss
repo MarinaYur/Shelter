@@ -6,6 +6,7 @@
   position: relative;
   transition: 0.5s;
   @include media-mobile {
+    z-index: 1;
     display: inline-block;
     z-index: 1;
   }
