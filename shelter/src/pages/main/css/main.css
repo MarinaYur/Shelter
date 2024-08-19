@@ -11,16 +11,39 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav {
-    display: none;
     position: absolute;
     top: 0;
     right: 0px;
     width: 320px;
-    height: 823px;
+
+    min-height: 823px;
+    height: 100%;
+
     background-color: #292929;
     text-align: center;
     padding-top: 249px;
     transform: translateX(100%);
+    transition: 1s;
+  }
+  .nav.slide-in {
+    animation: slide-in 1s forwards;
+  }
+  @keyframes slide-in {
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .nav.slide-out {
+    animation: slide-out 1s forwards;
+  }
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+
   }
 }
 
@@ -57,12 +80,9 @@
 .nav__list-link--active {
   color: #FAFAFA;
   border-bottom: solid 3px #F1CDB3;
-  padding-bottom: 3px;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .nav__list-link--active {
-    padding-bottom: 6px;
-  }
+
+  padding-bottom: 6px;
+
 }
 .nav__list-link:hover {
   color: #FAFAFA;
@@ -425,11 +445,13 @@
   height: 22px;
   width: 30px;
   position: relative;
+  transition: 0.5s;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .humburger {
     z-index: 1;
     display: inline-block;
+    z-index: 1;
   }
 }
 
@@ -451,6 +473,11 @@
 .humburger:after {
   bottom: 0;
   left: 0;
+}
+
+.burger_reverse {
+  transform: rotate(-90deg);
+  z-index: 1;
 }
 
 @font-face {
@@ -551,6 +578,15 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
+}
+
+.shadow_on {
+  position: absolute;
+  width: 100%;
+  min-height: 823px;
+  height: 100%;
+  content: "";
+  background-color: rgba(41, 41, 41, 0.6);
 }
 
 .header-notOnly {
