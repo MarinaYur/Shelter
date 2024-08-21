@@ -6,6 +6,7 @@
 }
 
 .nav {
+  position: relative;
   width: 443px;
   padding-top: 15px;
 }
@@ -13,14 +14,13 @@
   .nav {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     width: 320px;
     min-height: 823px;
     height: 100%;
     background-color: #292929;
     text-align: center;
     padding-top: 249px;
-    transform: translateX(100%);
     transition: 1s;
   }
   .nav.slide-in {

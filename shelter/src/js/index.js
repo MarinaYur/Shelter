@@ -98,17 +98,19 @@ let petsData = [
   },
 ];
 let petsNames = petsData.map((el) => el.name);
-console.log(petsNames);
 let currentPet = 0;
 let isEnabled = true;
 let side = "";
 let prevSide = "";
 let prevPetsArray = [];
 let activePets = [];
-let freePets = [];
+let elemsCount = 3;
+let inWidth = window.innerWidth;
 
 window.onload = function () {
-  createCards();
+  shuffleArray(petsData);
+  screenWidth();
+  activePets = petsData.slice(0, elemsCount);
   openCloseBurgerMenu();
 };
 
@@ -117,10 +119,14 @@ let shuffleArray = (array) => {
 };
 
 const createCards = function () {
-  shuffleArray(petsData);
-  activePets = petsData.slice(0, 3);
+  let activePetsLength = activePets.length;
+  let freePets = Array(activePetsLength).concat(
+    petsData.filter((el) => !activePets.includes(el))
+  );
+  // console.log('freePets', freePets);
   let petsCounter = 0;
   let sliderContainer = document.querySelector(".slider_container");
+  sliderContainer.innerHTML = "";
   for (let i = 1; i <= 3; i++) {
     let block = document.createElement("div");
     block.className = `block block${i}`;
@@ -128,39 +134,44 @@ const createCards = function () {
       block.className += " active";
     }
     sliderContainer.append(block);
-    for (let j = 1; j <= 3; j++) {
+    for (let j = 1; j <= elemsCount; j++) {
       let pet = document.createElement("div");
       let petImage = document.createElement("div");
       let petName = document.createElement("p");
       let petButton = document.createElement("button");
-      if (petsCounter !== 8) {
-        petImage.style.backgroundImage = `url(${petsData[petsCounter].img})`;
-        console.log(petImage.style.backgroundImage);
-        petName.innerHTML = petsData[petsCounter].name;
-      } else {
-        let block2PetName1 = document.querySelector(
-          ".block2 .pet .pet__name"
-        ).innerHTML;
-        let block2PetImage1 = petsData.filter(
-          (el) => el.name === block2PetName1
-        )[0].img;
-        console.log(block2PetImage1);
-        petImage.style.backgroundImage = `url(${block2PetImage1})`;
-        petName.innerHTML = block2PetName1;
+      if (
+        petsCounter >= 0 &&
+        petsCounter < activePetsLength &&
+        activePetsLength !== 0
+      ) {
+        petImage.style.backgroundImage = `url(${activePets[petsCounter].img})`;
+        petName.innerHTML = activePets[petsCounter].name;
+      } else if (petsCounter !== 8) {
+        if (activePets.length < elemsCount) {
+          activePets.push(freePets[petsCounter]);
+          // console.log('activePets', activePets, elemsCount, activePetsLength);
+        }
+        petImage.style.backgroundImage = `url(${freePets[petsCounter].img})`;
+        petName.innerHTML = freePets[petsCounter].name;
+      } else if (elemsCount === 3) {
+        petImage.style.backgroundImage = ``;
+        petName.innerHTML = '';
       }
       petButton.innerHTML = "Learn more";
 
       petName.className = "pet__name";
       petButton.className = "pet__button button button--bordered";
       petImage.className = `pet__image`;
-      pet.className = "pet";
+      pet.className = `pet`;
       block.append(pet);
       pet.append(petImage);
       pet.append(petName);
       pet.append(petButton);
       petsCounter++;
+      // console.log("petName.innerHTML", petsCounter, petName.innerHTML);
     }
   }
+  window.addEventListener("resize", updateScreenWidth);
 };
 
 // open/close mobile-menu
@@ -206,16 +217,13 @@ const closeBurgerMenu = (logo, burger, navigation, shadow, body) => {
 };
 
 function changeCurrentPet(n) {
-  console.log("activePets begin", activePets);
   let pets = document.querySelectorAll(".block");
-  console.log("side", side);
-  console.log("prevSide", prevSide);
   if (side === prevSide || prevSide === "") {
     prevPetsArray = [...activePets];
     shuffleArray(petsData);
     activePets = petsData
       .filter((el) => !prevPetsArray.includes(el))
-      .slice(0, 3);
+      .slice(0, elemsCount);
   }
   if (side !== prevSide && prevSide !== "") {
     let interim = [...activePets];
@@ -224,11 +232,11 @@ function changeCurrentPet(n) {
   }
   prevSide = side;
   currentPet = (n + pets.length) % pets.length;
+  console.log("activePets", activePets);
   Array.from(pets[currentPet].children).forEach((el, ind) => {
     el.children[0].style.backgroundImage = `url(${activePets[ind].img})`;
     el.children[1].innerHTML = activePets[ind].name;
   });
-  console.log("activePets", activePets);
 }
 
 function hidePet(direction) {
@@ -253,13 +261,14 @@ function showPet(direction) {
 function nextPet(n) {
   hidePet("to-left");
   changeCurrentPet(n + 1);
+
   showPet("from-right");
 }
 
 function previousPet(n) {
   hidePet("to-right");
   changeCurrentPet(n - 1);
-  showPet("from-left");
+  showPet("from-left"), 10000;
 }
 
 let rightArrow = document.querySelector(".slider__right-arrow");
@@ -278,3 +287,26 @@ leftArrow.addEventListener("click", () => {
     previousPet(currentPet);
   }
 });
+
+let screenWidth = () => {
+  const width = window.innerWidth;
+  if (width > 1001) {
+    elemsCount = 3;
+    createCards();
+  } else if (width <= 1000 && width > 550) {
+    elemsCount = 2;
+    createCards();
+  } else if (width <= 550) {
+    elemsCount = 1;
+    createCards();
+  }
+};
+
+let updateScreenWidth = () => {
+  const width = window.innerWidth;
+  screenWidth();
+  side = "";
+  prevSide = "";
+  prevPetsArray = [];
+  currentPet = 0;
+};
