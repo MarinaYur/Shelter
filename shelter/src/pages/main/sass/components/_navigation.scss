@@ -2,10 +2,8 @@
     position: relative;
     width: 443px;
     padding-top: 15px;
-    // display: none;
     @include media-mobile {
-        // display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 320px;
@@ -14,8 +12,11 @@
         background-color: $color-dark-3xl;
         text-align: center;
         padding-top: 249px;
-        // transform: translateX(100%);
+        transform: translateX(100%);
         transition: 1s;
+        &.hidden {
+            visibility: hidden;
+        }
         &.slide-in {
             animation: slide-in 1s forwards;
             @keyframes slide-in {

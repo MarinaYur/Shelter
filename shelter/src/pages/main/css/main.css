@@ -12,7 +12,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 320px;
@@ -21,7 +21,11 @@
     background-color: #292929;
     text-align: center;
     padding-top: 249px;
+    transform: translateX(100%);
     transition: 1s;
+  }
+  .nav.hidden {
+    visibility: hidden;
   }
   .nav.slide-in {
     animation: slide-in 1s forwards;

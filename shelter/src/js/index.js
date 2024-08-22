@@ -186,6 +186,7 @@ const openCloseBurgerMenu = () => {
   body.addEventListener("click", (e) => {
     if (e.target == burger || burgerLine || shadow || listLink) {
       if (!logo.classList.contains("logo_opened_burger")) {
+
         openBurgerMenu(logo, burger, navigation, shadow, body);
       } else {
         closeBurgerMenu(logo, burger, navigation, shadow, body);
@@ -200,6 +201,7 @@ const openBurgerMenu = (logo, burger, navigation, shadow, body) => {
   body.style.overflow = "hidden";
   logo.classList.add("logo_opened_burger");
   burger.classList.add("burger_reverse");
+  navigation.classList.remove('hidden');
   navigation.classList.remove("slide-out");
   navigation.classList.add("slide-in");
   shadow.classList.add("shadow_on");
@@ -211,6 +213,7 @@ const closeBurgerMenu = (logo, burger, navigation, shadow, body) => {
   body.style.overflow = "visible";
   navigation.classList.remove("slide-in");
   navigation.classList.add("slide-out");
+  navigation.classList.add("hidden");
   logo.classList.remove("logo_opened_burger");
   burger.classList.remove("burger_reverse");
   shadow.classList.remove("shadow_on");
