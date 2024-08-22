@@ -155,7 +155,7 @@ const createCards = function () {
         petName.innerHTML = freePets[petsCounter].name;
       } else if (elemsCount === 3) {
         petImage.style.backgroundImage = ``;
-        petName.innerHTML = '';
+        petName.innerHTML = "";
       }
       petButton.innerHTML = "Learn more";
 
@@ -176,47 +176,38 @@ const createCards = function () {
 
 // open/close mobile-menu
 const openCloseBurgerMenu = () => {
-  let logo = document.querySelector(".logo");
   let burger = document.querySelector(".humburger");
   let navigation = document.querySelector(".nav");
   let shadow = document.querySelector(".shadow");
   let body = document.querySelector("body");
-  let burgerLine = document.querySelector(".humburger__line");
-  let listLink = document.querySelector(".nav__list-link");
-  body.addEventListener("click", (e) => {
-    if (e.target == burger || burgerLine || shadow || listLink) {
-      if (!logo.classList.contains("logo_opened_burger")) {
+  let burgerLines = document.querySelectorAll(".humburger__line");
+  let listLinks = document.querySelectorAll(".nav__list-link");
 
-        openBurgerMenu(logo, burger, navigation, shadow, body);
+  body.addEventListener("click", (e) => {
+    console.log("e.target", e.target);
+
+    if (e.target === burger || Array.from(burgerLines).includes(e.target)) {
+      burger.classList.toggle("burger_reverse");
+      shadow.classList.toggle("shadow_on");
+      body.style.overflow = "hidden";
+
+      if (navigation.classList.contains("slide-in")) {
+        navigation.classList.remove("slide-in");
+        navigation.classList.add("slide-out");
       } else {
-        closeBurgerMenu(logo, burger, navigation, shadow, body);
+        navigation.classList.remove("slide-out");
+        navigation.classList.add("slide-in");
       }
     }
+
+    if (Array.from(listLinks).includes(e.target) || e.target === shadow) {
+      burger.classList.remove("burger_reverse");
+      shadow.classList.remove("shadow_on");
+      navigation.classList.remove("slide-in");
+      navigation.classList.add("slide-out");
+      body.style.overflow = "visible";
+    }
   });
-};
-
-// open mobile-menu
-
-const openBurgerMenu = (logo, burger, navigation, shadow, body) => {
-  body.style.overflow = "hidden";
-  logo.classList.add("logo_opened_burger");
-  burger.classList.add("burger_reverse");
-  navigation.classList.remove('hidden');
-  navigation.classList.remove("slide-out");
-  navigation.classList.add("slide-in");
-  shadow.classList.add("shadow_on");
-};
-
-//close mobile-menu
-
-const closeBurgerMenu = (logo, burger, navigation, shadow, body) => {
-  body.style.overflow = "visible";
-  navigation.classList.remove("slide-in");
-  navigation.classList.add("slide-out");
-  navigation.classList.add("hidden");
-  logo.classList.remove("logo_opened_burger");
-  burger.classList.remove("burger_reverse");
-  shadow.classList.remove("shadow_on");
 };
 
 function changeCurrentPet(n) {
