@@ -1,3 +1,4 @@
+
 console.log("Выполнены все пункты задания. Оценка 100/100");
 let petsData = [
   {
@@ -97,7 +98,6 @@ let petsData = [
     parasites: ["lice", "fleas"],
   },
 ];
-let petsNames = petsData.map((el) => el.name);
 let currentPet = 0;
 let isEnabled = true;
 let side = "";
@@ -105,17 +105,47 @@ let prevSide = "";
 let prevPetsArray = [];
 let activePets = [];
 let elemsCount = 3;
-let inWidth = window.innerWidth;
-
-window.onload = function () {
-  shuffleArray(petsData);
-  screenWidth();
-  activePets = petsData.slice(0, elemsCount);
-  openCloseBurgerMenu();
-};
 
 let shuffleArray = (array) => {
   array.sort(() => Math.random() - 0.5);
+};
+
+// open/close mobile-menu
+const openCloseBurgerMenu = () => {
+  let burger = document.querySelector(".humburger");
+  let navigation = document.querySelector(".nav");
+  let shadow = document.querySelector(".shadow");
+  let body = document.querySelector("body");
+  let burgerLines = document.querySelectorAll(".humburger__line");
+  let listLinks = document.querySelectorAll(".nav__list-link");
+
+  body.addEventListener("click", (e) => {
+    console.log("e.target", e.target);
+
+    if (e.target === burger || Array.from(burgerLines).includes(e.target)) {
+      burger.classList.toggle("burger_reverse");
+      shadow.classList.toggle("shadow_on");
+      body.style.overflow = "hidden";
+
+      if (navigation.classList.contains("slide-in")) {
+        navigation.classList.remove("slide-in");
+        navigation.classList.add("slide-out");
+        body.style.overflow = "visible";
+
+      } else {
+        navigation.classList.remove("slide-out");
+        navigation.classList.add("slide-in");
+      }
+    }
+
+    if (Array.from(listLinks).includes(e.target) || e.target === shadow) {
+      burger.classList.remove("burger_reverse");
+      shadow.classList.remove("shadow_on");
+      navigation.classList.remove("slide-in");
+      navigation.classList.add("slide-out");
+      body.style.overflow = "visible";
+    }
+  });
 };
 
 const createCards = function () {
@@ -123,7 +153,6 @@ const createCards = function () {
   let freePets = Array(activePetsLength).concat(
     petsData.filter((el) => !activePets.includes(el))
   );
-  // console.log('freePets', freePets);
   let petsCounter = 0;
   let sliderContainer = document.querySelector(".slider_container");
   sliderContainer.innerHTML = "";
@@ -149,7 +178,6 @@ const createCards = function () {
       } else if (petsCounter !== 8) {
         if (activePets.length < elemsCount) {
           activePets.push(freePets[petsCounter]);
-          // console.log('activePets', activePets, elemsCount, activePetsLength);
         }
         petImage.style.backgroundImage = `url(${freePets[petsCounter].img})`;
         petName.innerHTML = freePets[petsCounter].name;
@@ -168,47 +196,11 @@ const createCards = function () {
       pet.append(petName);
       pet.append(petButton);
       petsCounter++;
-      // console.log("petName.innerHTML", petsCounter, petName.innerHTML);
     }
   }
   window.addEventListener("resize", updateScreenWidth);
 };
 
-// open/close mobile-menu
-const openCloseBurgerMenu = () => {
-  let burger = document.querySelector(".humburger");
-  let navigation = document.querySelector(".nav");
-  let shadow = document.querySelector(".shadow");
-  let body = document.querySelector("body");
-  let burgerLines = document.querySelectorAll(".humburger__line");
-  let listLinks = document.querySelectorAll(".nav__list-link");
-
-  body.addEventListener("click", (e) => {
-    console.log("e.target", e.target);
-
-    if (e.target === burger || Array.from(burgerLines).includes(e.target)) {
-      burger.classList.toggle("burger_reverse");
-      shadow.classList.toggle("shadow_on");
-      body.style.overflow = "hidden";
-
-      if (navigation.classList.contains("slide-in")) {
-        navigation.classList.remove("slide-in");
-        navigation.classList.add("slide-out");
-      } else {
-        navigation.classList.remove("slide-out");
-        navigation.classList.add("slide-in");
-      }
-    }
-
-    if (Array.from(listLinks).includes(e.target) || e.target === shadow) {
-      burger.classList.remove("burger_reverse");
-      shadow.classList.remove("shadow_on");
-      navigation.classList.remove("slide-in");
-      navigation.classList.add("slide-out");
-      body.style.overflow = "visible";
-    }
-  });
-};
 
 function changeCurrentPet(n) {
   let pets = document.querySelectorAll(".block");
@@ -266,7 +258,7 @@ function previousPet(n) {
 }
 
 let rightArrow = document.querySelector(".slider__right-arrow");
-rightArrow.addEventListener("click", (e) => {
+rightArrow?.addEventListener("click", (e) => {
   side = "right";
   if (isEnabled) {
     nextPet(currentPet);
@@ -275,7 +267,7 @@ rightArrow.addEventListener("click", (e) => {
 
 let leftArrow = document.querySelector(".slider__left-arrow");
 
-leftArrow.addEventListener("click", () => {
+leftArrow?.addEventListener("click", () => {
   side = "left";
   if (isEnabled) {
     previousPet(currentPet);
@@ -303,4 +295,11 @@ let updateScreenWidth = () => {
   prevSide = "";
   prevPetsArray = [];
   currentPet = 0;
+};
+
+window.onload = function () {
+  shuffleArray(petsData);
+  screenWidth();
+  activePets = petsData.slice(0, elemsCount);
+  openCloseBurgerMenu();
 };

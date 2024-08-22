@@ -1,17 +1,37 @@
 .nav {
+  position: relative;
   width: 443px;
   padding-top: 15px;
   @include media-mobile {
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0px;
+    right: 0;
     width: 320px;
-    height: 823px;
-    background-color: #292929;
+    min-height: 823px;
+    height: 100vh;
+    background-color: $color-light-s;
     text-align: center;
     padding-top: 249px;
     transform: translateX(100%);
+    transition: 1s;
+    &.hidden {
+      visibility: hidden;
+  }
+  &.slide-in {
+      animation: slide-in 1s forwards;
+      @keyframes slide-in {
+          100% {
+              transform: translateX(0); }
+      }
+  }
+  &.slide-out {
+      animation: slide-out 1s forwards;
+      @keyframes slide-out {
+          0% { transform: translateX(0%); }
+          100% {
+              transform: translateX(100%); }
+      }
+  }
   }
 }
 

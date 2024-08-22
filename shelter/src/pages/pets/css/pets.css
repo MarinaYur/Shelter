@@ -6,21 +6,45 @@
 }
 
 .nav {
+  position: relative;
   width: 443px;
   padding-top: 15px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav {
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0px;
+    right: 0;
     width: 320px;
-    height: 823px;
-    background-color: #292929;
+    min-height: 823px;
+    height: 100vh;
+    background-color: #FAFAFA;
     text-align: center;
     padding-top: 249px;
     transform: translateX(100%);
+    transition: 1s;
+  }
+  .nav.hidden {
+    visibility: hidden;
+  }
+  .nav.slide-in {
+    animation: slide-in 1s forwards;
+  }
+  @keyframes slide-in {
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .nav.slide-out {
+    animation: slide-out 1s forwards;
+  }
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
   }
 }
 
@@ -178,6 +202,10 @@
   color: #292929;
   letter-spacing: 1px;
   transition: 0.5s;
+}
+.button--bordered {
+  border: 2px solid #f1cdb3;
+  background-color: #FAFAFA;
 }
 .button:hover {
   background-color: #FDDCC4;
@@ -341,6 +369,15 @@ p {
   line-height: 2.4rem;
 }
 
+.shadow_on {
+  position: absolute;
+  width: 100%;
+  min-height: 1000px;
+  height: 100vh;
+  content: "";
+  background-color: rgba(41, 41, 41, 0.6);
+}
+
 .header {
   padding-bottom: 22px;
   background-color: #FFFFFF;
@@ -451,6 +488,8 @@ p {
 .ourFriends__slider {
   padding: 59px 0 0 0px;
   transition: 0.5s;
+  overflow: hidden;
+  height: 930px;
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .ourFriends__slider {

@@ -37,6 +37,8 @@
 .ourFriends__slider {
   padding: 59px 0 0 0px;
   transition: 0.5s;
+  overflow: hidden;
+    height: 930px;
   @include media-all-tablet {
     padding-top: 29px;
   }
