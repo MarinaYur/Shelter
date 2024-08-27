@@ -7,13 +7,15 @@
     top: 0;
     right: 0;
     width: 320px;
-    min-height: 823px;
+    min-height: 30vh;
     height: 100vh;
+    z-index: 3;
     background-color: $color-light-s;
     text-align: center;
-    padding-top: 249px;
+    align-content: center;
+    // padding-top: 249px;
     transform: translateX(100%);
-    transition: 1s;
+    transition: 0.5s;
     &.hidden {
       visibility: hidden;
   }
