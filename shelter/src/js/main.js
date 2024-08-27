@@ -247,7 +247,6 @@ function showPet(direction) {
 function nextPet(n) {
   hidePet("to-left");
   changeCurrentPet(n + 1);
-
   showPet("from-right");
 }
 

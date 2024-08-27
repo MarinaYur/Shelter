@@ -7,7 +7,6 @@ export const openCloseBurgerMenu = () => {
   let listLinks = document.querySelectorAll(".nav__list-link");
 
   body.addEventListener("click", (e) => {
-    console.log("e.target", e.target);
 
     if (e.target === burger || Array.from(burgerLines).includes(e.target)) {
       burger.classList.toggle("burger_reverse");
