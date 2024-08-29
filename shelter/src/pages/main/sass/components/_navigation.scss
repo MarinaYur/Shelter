@@ -7,11 +7,14 @@
         top: 0;
         right: 0;
         width: 320px;
-        min-height: 823px;
+        min-height: 30vh;
         height: 100vh;
         background-color: $color-dark-3xl;
+        padding-top: 0px;
         text-align: center;
-        padding-top: 249px;
+        // padding-top: 249px;
+       align-items: center;
+       align-content: center;
         transform: translateX(100%);
         transition: 1s;
         &.hidden {

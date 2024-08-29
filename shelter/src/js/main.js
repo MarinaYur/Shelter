@@ -1,9 +1,9 @@
-
+import { createPopup, closePopup } from "./popup.js";
 console.log("Выполнены все пункты задания. Оценка 100/100");
 let petsData = [
   {
     name: "Jennifer",
-    img: "../../assets/images/pet-Jennifer.svg",
+    img: "../../assets/images/pets-Jennifer.svg",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -120,7 +120,7 @@ const openCloseBurgerMenu = () => {
   let listLinks = document.querySelectorAll(".nav__list-link");
 
   body.addEventListener("click", (e) => {
-    console.log("e.target", e.target);
+    // console.log("e.target", e.target);
 
     if (e.target === burger || Array.from(burgerLines).includes(e.target)) {
       burger.classList.toggle("burger_reverse");
@@ -131,7 +131,6 @@ const openCloseBurgerMenu = () => {
         navigation.classList.remove("slide-in");
         navigation.classList.add("slide-out");
         body.style.overflow = "visible";
-
       } else {
         navigation.classList.remove("slide-out");
         navigation.classList.add("slide-in");
@@ -201,7 +200,6 @@ const createCards = function () {
   window.addEventListener("resize", updateScreenWidth);
 };
 
-
 function changeCurrentPet(n) {
   let pets = document.querySelectorAll(".block");
   if (side === prevSide || prevSide === "") {
@@ -218,7 +216,7 @@ function changeCurrentPet(n) {
   }
   prevSide = side;
   currentPet = (n + pets.length) % pets.length;
-  console.log("activePets", activePets);
+  // console.log("activePets", activePets);
   Array.from(pets[currentPet].children).forEach((el, ind) => {
     el.children[0].style.backgroundImage = `url(${activePets[ind].img})`;
     el.children[1].innerHTML = activePets[ind].name;
@@ -277,14 +275,14 @@ let screenWidth = () => {
   const width = window.innerWidth;
   if (width > 1001) {
     elemsCount = 3;
-    createCards();
   } else if (width <= 1000 && width > 550) {
     elemsCount = 2;
-    createCards();
   } else if (width <= 550) {
     elemsCount = 1;
-    createCards();
   }
+  createCards();
+  createPopup(petsData);
+
 };
 
 let updateScreenWidth = () => {
@@ -301,4 +299,6 @@ window.onload = function () {
   screenWidth();
   activePets = petsData.slice(0, elemsCount);
   openCloseBurgerMenu();
+  // createPopup(petsData);
+  // closePopup();
 };

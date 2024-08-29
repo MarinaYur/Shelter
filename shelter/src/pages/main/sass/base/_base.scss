@@ -64,9 +64,9 @@ p {
 
 .shadow_on {
     position: absolute;
-    width: 100%;
-    min-height: 1000px;
-    height: 100vh;
-    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: $blackout;
 }
