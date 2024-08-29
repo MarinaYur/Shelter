@@ -1,4 +1,4 @@
-import { createPopup, closePopup } from "./popup.js";
+import { createPopup } from "./popup.js";
 console.log("Выполнены все пункты задания. Оценка 100/100");
 let petsData = [
   {
@@ -120,7 +120,6 @@ const openCloseBurgerMenu = () => {
   let listLinks = document.querySelectorAll(".nav__list-link");
 
   body.addEventListener("click", (e) => {
-    // console.log("e.target", e.target);
 
     if (e.target === burger || Array.from(burgerLines).includes(e.target)) {
       burger.classList.toggle("burger_reverse");
@@ -216,7 +215,6 @@ function changeCurrentPet(n) {
   }
   prevSide = side;
   currentPet = (n + pets.length) % pets.length;
-  // console.log("activePets", activePets);
   Array.from(pets[currentPet].children).forEach((el, ind) => {
     el.children[0].style.backgroundImage = `url(${activePets[ind].img})`;
     el.children[1].innerHTML = activePets[ind].name;
@@ -299,6 +297,4 @@ window.onload = function () {
   screenWidth();
   activePets = petsData.slice(0, elemsCount);
   openCloseBurgerMenu();
-  // createPopup(petsData);
-  // closePopup();
 };

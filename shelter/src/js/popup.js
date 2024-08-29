@@ -6,18 +6,16 @@ export const createUnderlay = () => {
   let popup = document.createElement('div');
   popup.className = 'popup';
   underlay.append(popup);
+  // console.log('from pets page')
   return popup;
 }
 
 export const createPopup = (petsData) => {
   let body = document.querySelector('body');
   let popup = createUnderlay();
-  // const underlay = createUnderlay();
-  let sliderPets = document.querySelector('.slider__pets');
-  // console.log(underlay);
-
-
   let pets = document.querySelectorAll('.pet');
+  console.log('from pets page')
+
   pets.forEach(pet => {
       // filling the block with a photo from JSON
       petsData.forEach(petData => {

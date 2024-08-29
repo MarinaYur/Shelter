@@ -3,11 +3,12 @@ import { shuffleArray } from "./shuffle-array.js";
 import {
   screenWidth
 } from "./for-slider.js";
+import { createPopup } from "./popup.js";
 console.log("Выполнены все пункты задания. Оценка 100/100");
 let petsData = [
   {
     name: "Jennifer",
-    img: "../../assets/images/pet-Jennifer.svg",
+    img: "../../assets/images/pets-Jennifer.svg",
     type: "Dog",
     breed: "Labrador",
     description:
@@ -184,11 +185,14 @@ const createCards = function (screenSize) {
     }
   }
   reloadPage = false;
+  createPopup(petsData);
+
 };
 
 export const updateScreenWidth = () => {
   const screenSize = screenWidth();
   createCards(screenSize);
+  // createPopup(petsData);
   makeLeftArrowsDisabled();
   makeRightArrowsAble();
 };

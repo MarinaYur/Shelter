@@ -12,7 +12,6 @@ export const screenWidth = () => {
 export function changeCurrentPet(n, classForChoice) {
   let selection = document.querySelectorAll(classForChoice);
   console.log(selection);
-  // console.log(selection);
   currentPet = (n + selection.length) % selection.length;
   console.log(currentPet);
 }
