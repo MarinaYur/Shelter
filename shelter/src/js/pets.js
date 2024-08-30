@@ -3,7 +3,7 @@ import { shuffleArray } from "./shuffle-array.js";
 import {
   screenWidth
 } from "./for-slider.js";
-import { createPopup } from "./popup.js";
+import { createPopup, createUnderlay } from "./popup.js";
 console.log("Выполнены все пункты задания. Оценка 100/100");
 let petsData = [
   {
@@ -110,9 +110,11 @@ const createPetsArray = () => {
   }
 };
 window.onload = function () {
+  createUnderlay();
   createPetsArray();
   createCards();
   openCloseBurgerMenu();
+
 };
 let petsCount = {
   desktop: 8,
@@ -366,3 +368,61 @@ rightArrowToMax.addEventListener('click', () => {
     changePageNumberToLast()
   }
 });
+// leftArrowTo1.addEventListener("click", () => {
+//   let difference = currentPage - 1; // Определяем разницу в страницах
+
+//   if (isEnabled) {
+//     // Рекурсивная функция для циклической смены страниц с задержкой
+//     function scrollToPreviousPage(index) {
+//       if (index <= 0) {
+//         currentPage = 0; // Устанавливаем текущую страницу на первую после завершения цикла
+//         pageNumber.innerHTML = currentPage + 1;
+//         makeLeftArrowsDisabled();
+//         toggleClass(rightArrow, pageNumber.innerHTML !== pageAmount, "slider__arrow", "disabled");
+//         toggleClass(rightArrowToMax, pageNumber.innerHTML !== pageAmount, "slider__arrow", "disabled");
+//         return;
+//       }
+
+// function timerId1 () {
+//         previousPet(currentPage, ".block");
+//         changePageNumber(-1);
+//         scrollToPreviousPage(index - 1); // Продолжаем цикл
+//       }
+
+//       setTimeout(timerId1, 600); // Задержка в миллисекундах (можно настроить под свои нужды)
+//     }
+
+//     scrollToPreviousPage(difference + 1); // Запускаем рекурсивный цикл
+//   }
+// });
+
+// /**
+//  * Пролистывает следующие страницы до последней с задержкой для плавности.
+//  */
+// rightArrowToMax.addEventListener("click", () => {
+//   let difference = pageAmount - currentPage;
+
+//   if (isEnabled) {
+//     // Рекурсивная функция для циклической смены страниц с задержкой
+//     function scrollToNextPage(index) {
+//       if (index <= 0) {
+//         currentPage = pageAmount - 1; // Устанавливаем текущую страницу на последнюю после завершения цикла
+//         pageNumber.innerHTML = currentPage + 1;
+//         makeRightArrowsDisabled();
+//         toggleClass(leftArrow, pageNumber.innerHTML !== 1, "slider__arrow", "disabled");
+//         toggleClass(leftArrowTo1, pageNumber.innerHTML !== 1, "slider__arrow", "disabled");
+//         return;
+//       }
+
+// function timerId2() {
+//   nextPet(currentPage, ".block");
+//         changePageNumber(1);
+//         scrollToNextPage(index - 1);
+// }
+
+//       setTimeout(timerId2, 600); // Задержка в миллисекундах (можно настроить под свои нужды)
+//     }
+
+//     scrollToNextPage(difference - 1); // Запускаем рекурсивный цикл
+//   }
+// });

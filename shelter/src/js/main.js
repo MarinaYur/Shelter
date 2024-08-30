@@ -1,4 +1,4 @@
-import { createPopup } from "./popup.js";
+import { createPopup, createUnderlay } from "./popup.js";
 console.log("Выполнены все пункты задания. Оценка 100/100");
 let petsData = [
   {
@@ -293,6 +293,7 @@ let updateScreenWidth = () => {
 };
 
 window.onload = function () {
+  createUnderlay();
   shuffleArray(petsData);
   screenWidth();
   activePets = petsData.slice(0, elemsCount);
