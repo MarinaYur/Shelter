@@ -7,6 +7,10 @@
     color: $color-dark-3xl;
     letter-spacing: 1px;
     transition: 0.5s;
+    &--bordered {
+        border: 2px solid #f1cdb3;
+        background-color: $color-light-s;
+      }
     &:hover {
         background-color: $color-primary-light;
     }
