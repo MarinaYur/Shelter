@@ -61,3 +61,12 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     @include font (1.5rem, 2.4rem);
 }
+
+.shadow_on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $blackout;
+}

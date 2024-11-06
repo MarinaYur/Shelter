@@ -65,3 +65,13 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     @include font (1.5rem, 2.4rem);
 }
+
+.shadow_on {
+    position: absolute;
+    width: 100%;
+    min-height: 1000px;
+    height: 100vh;
+    content: '';
+    background-color: $blackout;
+    z-index: 2;
+}
